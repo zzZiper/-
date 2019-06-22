@@ -1,0 +1,46 @@
+@import '@/lib/reset.scss';
+* { touch-action: pan-y }
+html, body, #root, .container {
+  @include rect(100%, 100%);
+}
+.container {
+  @include flexbox();
+  @include flex-direction(column);
+  .box {
+    @include flex();
+    @include rect(100%, auto);
+    @include flexbox();
+    @include flex-direction(column);
+    .header {
+      @include rect(100%, 0.44rem);
+      @include background-color(rgb(218, 216, 216));
+    }
+    .content {
+      overflow: auto;
+      @include flex();
+      @include rect(100%, auto);
+    }
+  }
+  .footer {
+    @include rect(100%, 0.42rem);
+    @include background-color(#E8E7E7);
+    ul {
+      @include rect(100%, 100%);
+      @include flexbox();
+      a {
+        @include flex();
+        @include rect(auto, 100%);
+        @include flexbox();
+        @include flex-direction(column);
+        @include justify-content();
+        @include align-items();
+        @include text-color(#333);
+        font: .14rem/.42rem "";
+        &.active {
+          @include background-color(rgb(200, 200, 200));
+          @include text-color(#fff);
+        }
+      }
+    }
+  }
+}

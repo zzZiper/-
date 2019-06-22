@@ -1,0 +1,79 @@
+@import '@/lib/reset.scss';
+* { touch-action: pan-y }
+
+.box {
+  .content {
+    .top {
+      .am-navbar.am-navbar-light {
+        @include rect(100%, .5rem);
+        @include background-color(#E8E7E7);
+        .am-navbar-title {
+          font: .14rem/.5rem "";
+        }
+        .am-navbar-right {
+          font: .1rem/.5rem "";
+        }
+      }
+    }
+    .mine {
+      @include rect(100%,1.78rem);
+      @include background-color(#E8E7E7);
+      border-radius:0 0 70% 70%;
+      position: relative;
+      .box {
+        text-align: center;
+        .pic {
+          @include rect(.9rem, .9rem);
+          @include background-color(rgb(226, 221, 221));
+          @include border-radius(50%);
+          overflow: hidden;
+          margin: .06rem auto;
+          img {
+            @include rect(.9rem, .9rem);
+          }
+        }
+        p {
+          font: .14rem/.2rem "";
+        }
+        span {
+          font: .1rem/.2rem "";
+        }
+      }
+    }
+    .list {
+      @include padding(.1rem .19rem);
+      ul {
+        @include rect(100%, .9rem);
+        @include background-color(#E8E7E7);
+        @include flexbox();
+        @include justify-content(space-between);
+        @include padding(0 .3rem);
+        @include align-items();
+        li {
+          @include rect(.94rem, .66rem);
+          @include flexbox();
+          @include flex-direction(column);
+          @include justify-content();
+          @include align-items();
+          p {
+            font: .12rem/.22rem "";
+          }
+          span {
+            font: .14rem/.42rem "";
+          }
+        }
+      }
+      .kind {
+        margin-top:.2rem;
+        div {
+          border-bottom: 1px solid #cccccc;
+          a {
+            display: block;
+            color: #646464;
+            font: .14rem/.42rem "";
+          }
+        }
+      }
+    }
+  }
+}
