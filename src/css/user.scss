@@ -77,3 +77,39 @@
     }
   }
 }
+
+.member {
+  .top {
+    .am-navbar.am-navbar-dark {
+      @include rect(100%, .42rem);
+      @include background-color(#fff);
+      .am-navbar-title {
+        font:.14rem/42rem "";
+        color: #646464 ;
+      }
+      .am-icon.am-icon-left.am-icon-md {
+        color: #646464 ;
+      }
+    }
+  }
+  .am-carousel-wrap {
+    margin-top:-.4rem;
+  }
+  .show {
+    @include margin(0 .12rem);
+    margin-top:-.14rem;
+    @include background-color(#fff);
+    position: relative;
+    z-index:1000;
+    @include border-radius(.12rem .12rem 0 0);
+    .top {
+      @include flexbox();
+      li {
+        .img {
+          @include rect(.5rem,.5rem);
+          @include background-color(#999);
+        }
+      }
+    }
+  }
+}
