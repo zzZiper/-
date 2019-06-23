@@ -2,6 +2,7 @@ import React from 'react';
 import { Carousel } from 'antd-mobile';
 
 const Com = ({ memberbannerlist }) => {
+  console.log(hhh)
   return (
   <Carousel
     autoplay
