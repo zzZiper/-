@@ -16,13 +16,13 @@ class Com extends Component {
             icon={<Icon type="left" onClick = { () => (this.props.history.go(-1)) }/> }
           >会员中心</NavBar>
         </div>
-        <Banner />
+        <Banner memberbannerlist = { this.props.memberBannerList }/>
         <div className = "show">
           <div className = "top">
             <ul>
               <li>
                 <div className = "img">
-                  <img src="" alt="" />
+                  <img src="http://img1.imgtn.bdimg.com/it/u=1532692218,53578615&fm=26&gp=0.jpg" alt="" />
                 </div>
                 <span>我的积分</span>
               </li>
@@ -37,6 +37,43 @@ class Com extends Component {
                   <img src="" alt="" />
                 </div>
                 <span>我的奖品</span>
+              </li>
+            </ul>
+          </div>
+          <div className = "list">
+            <h3>时光会员 专享好货</h3>
+            <ul>
+              <li>
+                <div className = "img">
+                  <img src = "http://img1.imgtn.bdimg.com/it/u=1532692218,53578615&fm=26&gp=0.jpg" alt = ""/>
+                </div>
+                <h4>宝宝爬行垫折叠</h4>
+                <p>萌宝摔倒不疼</p>
+                <b>￥ 199.00</b>
+              </li>
+              <li>
+                <div className = "img">
+                  <img src = "" alt = ""/>
+                </div>
+                <h4>宝宝爬行垫折叠</h4>
+                <p>萌宝摔倒不疼</p>
+                <b>￥ 199.00</b>
+              </li>
+              <li>
+                <div className = "img">
+                  <img src = "" alt = ""/>
+                </div>
+                <h4>宝宝爬行垫折叠</h4>
+                <p>萌宝摔倒不疼</p>
+                <b>￥ 199.00</b>
+              </li>
+              <li>
+                <div className = "img">
+                  <img src = "" alt = ""/>
+                </div>
+                <h4>宝宝爬行垫折叠</h4>
+                <p>萌宝摔倒不疼</p>
+                <b>￥ 199.00</b>
               </li>
             </ul>
           </div>

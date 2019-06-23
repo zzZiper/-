@@ -1,7 +1,22 @@
-// import React from 'react';
 import { connect } from 'react-redux';
 import UI from './UI';
+import api from '@/api';
 
-const Com = connect()(UI)
+const mapStateToProps = (state) => ({
+  memberBannerList: state.member.memberBannerList
+})
+
+const mapDispatchToProps = (dispatch) => ({
+  getMemberBannerListData () {
+    api.reqGetData('/banner').then(data => {
+      dispatch({
+        type: 'changeMemberBannerList',
+        data
+      })
+    })
+  }
+})
+
+const Com = connect(mapStateToProps, mapDispatchToProps)(UI)
 
 export default Com;

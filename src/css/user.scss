@@ -78,7 +78,10 @@
   }
 }
 
+
+// 会员中心
 .member {
+  overflow: auto;
   .top {
     .am-navbar.am-navbar-dark {
       @include rect(100%, .42rem);
@@ -103,11 +106,242 @@
     z-index:1000;
     @include border-radius(.12rem .12rem 0 0);
     .top {
-      @include flexbox();
-      li {
-        .img {
-          @include rect(.5rem,.5rem);
-          @include background-color(#999);
+      ul {
+        @include rect(100%, 1rem);
+        @include flexbox();
+        @include flex-direction();
+        @include justify-content(space-around);
+        @include align-items();
+        li {
+          @include flexbox();
+          @include flex-direction(column);
+          @include align-items();
+          .img {
+            @include rect(.5rem,.5rem);
+            @include background-color(#999);
+            img {
+               @include rect(.5rem,.5rem);
+            }
+          }
+          span {
+            font:.12rem/.3rem "";
+          }
+        }
+      }
+    }
+    .list {
+      overflow: auto;
+      h3 {
+        @include text-align(center);
+        font: .18rem/.3rem "";
+        color: #666;
+      }
+      ul {
+        @include flexbox();
+        @include flex-wrap(wrap);
+        @include justify-content(space-between); 
+        li {
+          @include rect(1.5rem, auto);
+          @include flexbox();
+          @include flex-direction(column);
+          margin-top:.1rem;
+          .img {
+            @include rect(1.5rem, 1.5rem);
+            @include background-color(#444);
+            img {
+              @include rect(1.5rem, 1.5rem);
+            }
+          }
+          h4 {
+            font:.12rem/.3rem "";
+            color: #666;
+          }
+          p {
+            font:.1rem/.23rem "";
+            color: #BDBDBD;
+          }
+          b {
+            font: .1rem/.23rem "";
+            color: #D2D2D2
+          }
+        }
+      }
+    }
+  }
+}
+
+
+// 我的收藏
+.collection {
+  overflow: auto;
+  .top {
+    .am-navbar.am-navbar-dark {
+      @include rect(100%, .42rem);
+      @include background-color(#fff);
+      .am-navbar-title {
+        font:.14rem/42rem "";
+        color: #646464 ;
+      }
+      .am-icon.am-icon-left.am-icon-md {
+        color: #646464 ;
+      }
+    }
+  }
+  .am-carousel-wrap {
+    margin-top:-.4rem;
+  }
+  .show {
+    @include background-color(#fff);
+    .list {
+      @include padding(.1rem .3rem);
+      ul {
+        @include flexbox();
+        @include flex-wrap(wrap);
+        @include justify-content(space-between);
+        li {
+          overflow: hidden;
+          @include rect(1.5rem, 1.8rem);
+          @include border-radius(.08rem .08rem 0 0);
+          @include background-color(#E6E6E6);
+          @include margin(.2rem 0);
+          .img {
+            border-bottom: .01rem solid #BBBBBB;
+            img {
+              @include rect(1.5rem,1rem);
+            }
+          }
+          .box {
+            @include padding(0 .1rem);
+            h3 {
+              font:.12rem/.3rem "";
+              color: #646464;
+            }
+            p {
+              font:.1rem/.24rem "";
+              color: #D2D2D2;
+            }
+            span {
+              font:.24rem/.24rem "";
+              color: #101010;
+              position: relative;
+              left:1rem;
+              bottom: .1rem;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+// 相册
+.photo {
+  overflow: auto;
+  .top {
+    .am-navbar.am-navbar-dark {
+      @include rect(100%, .42rem);
+      @include background-color(#fff);
+      .am-navbar-title {
+        font:.14rem/42rem "";
+        color: #646464 ;
+      }
+      .am-icon.am-icon-left.am-icon-md {
+        color: #646464 ;
+      }
+    }
+  }
+  .am-carousel-wrap {
+    margin-top:-.4rem;
+  }
+  .show {
+    @include background-color(#fff);
+    .list {
+      @include padding(.1rem .2rem);
+      ul {
+        @include flexbox();
+        @include flex-wrap(wrap);
+        @include justify-content(space-between);
+        li {
+          overflow: hidden;
+          @include rect(1.66rem, 2rem);
+          @include border-radius(.08rem);
+          @include background-color(#F7F7F7);
+          @include margin(.08rem 0);
+          .box {
+            @include padding(0 .1rem);
+            h3 {
+              font:.14rem/.2rem "";
+              color: #666;
+            }
+            p {
+              font:.14rem/.2rem "";
+              color: #101010;
+              position: relative;
+              top:1.5rem;
+              span {
+                font:.18rem/.18rem "";
+                color: #101010;
+                float: right;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+// 购物车
+.cart {
+  overflow: auto;
+  .top {
+    .am-navbar.am-navbar-dark {
+      @include rect(100%, .42rem);
+      @include background-color(#F9F9F9);
+      .am-navbar-title {
+        font:.14rem/42rem "";
+        color: #646464 ;
+      }
+      .am-icon.am-icon-left.am-icon-md {
+        color: #646464 ;
+      }
+    }
+  }
+  .am-carousel-wrap {
+    margin-top:-.4rem;
+  }
+  .show {
+    @include background-color(#fff);
+    .list {
+      @include padding(.1rem .2rem);
+      ul {
+        @include flexbox();
+        @include flex-wrap(wrap);
+        @include justify-content(space-between);
+        li {
+          overflow: hidden;
+          @include rect(1.66rem, 2rem);
+          @include border-radius(.08rem);
+          @include background-color(#F7F7F7);
+          @include margin(.08rem 0);
+          .box {
+            @include padding(0 .1rem);
+            h3 {
+              font:.14rem/.2rem "";
+              color: #666;
+            }
+            p {
+              font:.14rem/.2rem "";
+              color: #101010;
+              position: relative;
+              top:1.5rem;
+              span {
+                font:.18rem/.18rem "";
+                color: #101010;
+                float: right;
+              }
+            }
+          }
         }
       }
     }

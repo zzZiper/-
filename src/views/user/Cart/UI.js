@@ -1,4 +1,6 @@
 import React, { Component } from 'react';
+import { NavBar, Icon } from 'antd-mobile';
+import '@/css/user.scss';
 
 class Com extends Component {
   componentDidMount () {
@@ -7,12 +9,41 @@ class Com extends Component {
 
   render () {
     return (
-      <div className = "box">
-        <header className = "header">
-          购物车头部
-        </header>
-        <div className = "content">
-          购物车内容
+      <div className = "cart">
+        <div className = "top">
+          <NavBar
+            icon={<Icon type="left" onClick = { () => (this.props.history.go(-1)) }/> }
+          >购物车</NavBar>
+        </div>
+        <div className = "show">
+          <div className = "list">
+            {/* <ul>
+              <li>
+                <div className = "box">
+                  <h3>宝宝成长相册</h3>
+                  <p>￥199.9<span className = "iconfont icon02"></span></p>
+                </div>
+              </li>
+              <li>
+                <div className = "box">
+                  <h3>宝宝成长相册</h3>
+                  <p>￥199.9<span className = "iconfont icon02"></span></p>
+                </div>
+              </li>
+              <li>
+                <div className = "box">
+                  <h3>宝宝成长相册</h3>
+                  <p>￥199.9<span className = "iconfont icon02"></span></p>
+                </div>
+              </li>
+              <li>
+                <div className = "box">
+                  <h3>宝宝成长相册</h3>
+                  <p>￥199.9<span className = "iconfont icon02"></span></p>
+                </div>
+              </li>
+            </ul> */}
+          </div>
         </div>
       </div>
     )

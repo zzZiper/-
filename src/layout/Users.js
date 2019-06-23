@@ -11,7 +11,7 @@ const Com = () => (
   <div className = "container">
     <Switch>
       <Route path = "/users/cart" component = { Cart } />
-      <Route path = "/users/colection" component = { Collection } />
+      <Route path = "/users/collection" component = { Collection } />
       <Route path = "/users/coupon" component = { Coupon } />
       <Route path = "/users/member" component = { Member } />
       <Route path = "/users/order" component = { Order } />
