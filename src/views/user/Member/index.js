@@ -9,6 +9,7 @@ const mapStateToProps = (state) => ({
 const mapDispatchToProps = (dispatch) => ({
   getMemberBannerListData () {
     api.reqGetData('/banner').then(data => {
+      console.log('');
       dispatch({
         type: 'changeMemberBannerList',
         data
