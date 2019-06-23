@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { NavBar, Icon } from 'antd-mobile';
 import  MemberBanner from '@/components/common/MemberBanner';
+
 import '@/css/user.scss';
 
 class Com extends Component {
@@ -9,6 +10,7 @@ class Com extends Component {
   }
 
   render () {
+    
     return (
       <div className = "member">
         <div className = "top">
