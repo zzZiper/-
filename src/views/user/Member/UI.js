@@ -1,11 +1,11 @@
 import React, { Component } from 'react';
 import { NavBar, Icon } from 'antd-mobile';
-import Banner from '@/components/common/memberBanner';
+import  MemberBanner from '@/components/common/MemberBanner';
 import '@/css/user.scss';
 
 class Com extends Component {
   componentDidMount () {
-
+    this.props.getMemberBannerListData();
   }
 
   render () {
@@ -16,7 +16,7 @@ class Com extends Component {
             icon={<Icon type="left" onClick = { () => (this.props.history.go(-1)) }/> }
           >会员中心</NavBar>
         </div>
-        <Banner memberbannerlist = { this.props.memberBannerList }/>
+        <MemberBanner memberbannerlist = { this.props.memberBannerList.data ? this.props.memberBannerList.data : []  }/>
         <div className = "show">
           <div className = "top">
             <ul>

@@ -95,6 +95,14 @@
       }
     }
   }
+  .slider.am-carousel {
+    @include rect(100%,1.5rem);
+    .slider-slide {
+      img {
+        @include rect(100%,1.5rem);
+      }
+    }
+  }
   .am-carousel-wrap {
     margin-top:-.4rem;
   }
