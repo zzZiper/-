@@ -2,6 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import App from './layout/App';
 import Users from './layout/Users';
+import SilkBags from './layout/SilkBags';
 import * as serviceWorker from './serviceWorker';
 import { Provider } from 'react-redux';
 import store from './store';
@@ -12,6 +13,7 @@ ReactDOM.render(
 <Provider store = { store }>
   <HashRouter>
     <Switch>
+      <Route path = "/silkbags" component = { SilkBags } />
       <Route path = "/users" component = { Users } />
       <Route path = "/" component = { App } />
     </Switch>

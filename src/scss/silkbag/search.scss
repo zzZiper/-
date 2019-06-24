@@ -1,0 +1,14 @@
+@import '@/lib/reset.scss';
+
+.silksearch {
+  @include rect (2.52rem, 0.17rem);
+  margin:0 auto;
+  input{
+    margin-top: 0.1rem;
+    @include rect (2.52rem, 0.17rem);
+    display: block;
+    border: 0;
+    background-color: #efefef;
+    border-radius: 0.1rem;
+  }
+}

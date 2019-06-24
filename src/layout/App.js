@@ -1,6 +1,6 @@
 import React from 'react';
 import { Switch, Route, Redirect, NavLink } from 'react-router-dom';
-import Home from '@/views/home';
+import SilkBag from '@/views/silkbag';
 import Life from '@/views/life';
 import Time from '@/views/time';
 import Msg from '@/views/msg';
@@ -9,16 +9,16 @@ import User from '@/views/user';
 const Com = () => (
   <div className = "container">
     <Switch>
-      <Route path = "/home" component = { Home } />
+      <Route path = "/silkbag" component = { SilkBag } />
       <Route path = "/life" component = { Life } />
       <Route path = "/time" component = { Time } />
       <Route path = "/msg" component = { Msg } />
       <Route path = "/user" component = { User } />
-      <Redirect to = "/home"/>
+      <Redirect to = "/silkbag"/>
     </Switch>
     <footer className = "footer">
       <ul>
-        <NavLink to = "/home">
+        <NavLink to = "/silkbag">
           <span></span>
           <p>锦囊</p>
         </NavLink>

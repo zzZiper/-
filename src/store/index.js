@@ -1,12 +1,14 @@
 import { createStore, combineReducers } from 'redux';
-import home from '@/views/home/store';
+import SilkBag from '@/views/silkbag/store';
 import user from '@/views/user/store';
 import member from '@/views/user/Member/store';
+import cookbook from '@/views/silkbag/store';
 
 const reducer = combineReducers({
-  home,
+  SilkBag,
   user,
-  member
+  member,
+  cookbook
 });
 
 const store = createStore(reducer);

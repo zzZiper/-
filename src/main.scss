@@ -11,14 +11,14 @@ html, body, #root, .container {
     @include rect(100%, auto);
     @include flexbox();
     @include flex-direction(column);
-    .header {
-      @include rect(100%, 0.44rem);
-      @include background-color(rgb(218, 216, 216));
-    }
     .content {
       overflow: auto;
       @include flex();
       @include rect(100%, auto);
+      .slider-decorator-0{
+        display: none;
+      }
+      
     }
   }
   .footer {

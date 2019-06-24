@@ -1,0 +1,21 @@
+@import '@/lib/reset.scss';
+.cooklist{
+  @include rect(100%, 1.6rem);
+  background: #fff;
+  ul {
+    @include flexbox();
+    li {
+      @include flex();
+      // @include rect(auto, 0.24rem);
+      @include flexbox();
+      @include flex-direction(column);
+      @include justify-content();
+      @include align-items();
+      @include text-color(#333);    
+      img {
+        @include rect(0.52rem, 0.52rem);
+        border-radius: 50%;
+      }
+    }
+  }
+}

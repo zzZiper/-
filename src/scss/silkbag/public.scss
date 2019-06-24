@@ -1,0 +1,14 @@
+@import '@/lib/reset.scss';
+.top {
+  .am-navbar.am-navbar-dark {
+    @include rect(100%, .42rem);
+    @include background-color(#fff);
+    .am-navbar-title {
+      font:.14rem/42rem "";
+      color: #646464 ;
+    }
+    .am-icon.am-icon-left.am-icon-md {
+      color: #646464 ;
+    }
+  }
+}
