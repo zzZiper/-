@@ -318,37 +318,75 @@
   .am-carousel-wrap {
     margin-top:-.4rem;
   }
-  .show {
-    @include background-color(#fff);
-    .list {
-      @include padding(.1rem .2rem);
+  .content {
+    .top {
+      border-top:.01rem solid rgb(226, 226, 226);
+      border-bottom:.01rem solid rgb(226, 226, 226);
       ul {
-        @include flexbox();
-        @include flex-wrap(wrap);
-        @include justify-content(space-between);
+        @include background-color(#fff);
         li {
-          overflow: hidden;
-          @include rect(1.66rem, 2rem);
-          @include border-radius(.08rem);
-          @include background-color(#F7F7F7);
-          @include margin(.08rem 0);
-          .box {
-            @include padding(0 .1rem);
-            h3 {
-              font:.14rem/.2rem "";
-              color: #666;
+          @include rect(100%,1.42rem);
+          .am-checkbox-agree {
+            @include padding(.2rem 0);
+          }
+          .img {
+            float: left;
+            @include rect(1rem,1rem);
+            @include background-color(#EEEEEE);
+            border-radius: .08rem;
+            overflow: hidden;
+            img {
+              @include rect(100%,100%);
             }
-            p {
-              font:.14rem/.2rem "";
-              color: #101010;
-              position: relative;
-              top:1.5rem;
+          }
+          dl {
+            float: left;
+            margin-left: .1rem;
+            dt {
+              font: .14rem/.3rem "";
+              color: #888888;
+            }
+            dd {
+              font: .12rem/.23rem "";
+              color: #D2D2D2;
               span {
-                font:.18rem/.18rem "";
-                color: #101010;
                 float: right;
               }
             }
+          }
+        }
+      }
+    }
+    .center {
+      @include rect(100%, auto);
+      h3 {
+        font:.12rem/.2rem "";
+        color: #666;
+        text-align: center;
+      }
+      ul {
+        @include flexbox();
+        @include justify-content(space-around);
+        @include flex-wrap(wrap);
+        li {
+          @include rect(1.16rem,1.4rem);
+          text-align: center;
+          .img {
+            @include rect(.86rem, .86rem);
+            @include border-radius(.08rem);
+            overflow: hidden;
+            @include margin(0 auto);
+            img {
+              @include rect(.86rem, .86rem);
+            }
+          }
+          p {
+            font:.12rem/.16rem "";
+            color: #666;
+          }
+          span {
+            font:.1rem/.14rem "";
+            color: #999;
           }
         }
       }

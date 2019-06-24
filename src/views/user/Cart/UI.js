@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
-import { NavBar, Icon } from 'antd-mobile';
+import { NavBar, Icon, Checkbox } from 'antd-mobile';
 import '@/css/user.scss';
+
+const AgreeItem = Checkbox.AgreeItem;
 
 class Com extends Component {
   componentDidMount () {
@@ -15,34 +17,104 @@ class Com extends Component {
             icon={<Icon type="left" onClick = { () => (this.props.history.go(-1)) }/> }
           >购物车</NavBar>
         </div>
-        <div className = "show">
-          <div className = "list">
-            {/* <ul>
+        <div className = "content">
+          <div className = "top">
+            <ul>
               <li>
-                <div className = "box">
-                  <h3>宝宝成长相册</h3>
-                  <p>￥199.9<span className = "iconfont icon02"></span></p>
-                </div>
+                <AgreeItem>
+                  <div className = "img">
+                    <img src="http://img1.imgtn.bdimg.com/it/u=1532692218,53578615&fm=26&gp=0.jpg" alt=""/>
+                  </div>
+                  <dl>
+                    <dt>6层纯棉纱布浴巾/盖毯/包巾</dt>
+                    <dd>A类品质，无荧光，无甲醛</dd>
+                    <dd>尺码：100*99cm 颜色：蓝色</dd>
+                    <dd>￥199.8<span>x3</span></dd>
+                  </dl>
+                </AgreeItem>
               </li>
               <li>
-                <div className = "box">
-                  <h3>宝宝成长相册</h3>
-                  <p>￥199.9<span className = "iconfont icon02"></span></p>
+                <AgreeItem>
+                  <div className = "img">
+                    <img src="http://img1.imgtn.bdimg.com/it/u=1532692218,53578615&fm=26&gp=0.jpg" alt=""/>
+                  </div>
+                  <dl>
+                    <dt>6层纯棉纱布浴巾/盖毯/包巾</dt>
+                    <dd>A类品质，无荧光，无甲醛</dd>
+                    <dd>尺码：100*99cm 颜色：蓝色</dd>
+                    <dd>￥199.8<span>x2</span></dd>
+                  </dl>
+                </AgreeItem>
+              </li>
+            </ul>
+          </div>
+          <div className = "center">
+            <h3>宝宝可能还需要</h3>
+            <ul>
+              <li>
+                <div className = "img">
+                  <img src="http://img1.imgtn.bdimg.com/it/u=1532692218,53578615&fm=26&gp=0.jpg" alt=""/>
                 </div>
+                <p>快吸秒干的拉拉裤</p>
+                <span>会员价￥1999</span>
               </li>
               <li>
-                <div className = "box">
-                  <h3>宝宝成长相册</h3>
-                  <p>￥199.9<span className = "iconfont icon02"></span></p>
+                <div className = "img">
+                  <img src="http://img1.imgtn.bdimg.com/it/u=1532692218,53578615&fm=26&gp=0.jpg" alt=""/>
                 </div>
+                <p>快吸秒干的拉拉裤</p>
+                <span>会员价￥1999</span>
               </li>
               <li>
-                <div className = "box">
-                  <h3>宝宝成长相册</h3>
-                  <p>￥199.9<span className = "iconfont icon02"></span></p>
+                <div className = "img">
+                  <img src="http://img1.imgtn.bdimg.com/it/u=1532692218,53578615&fm=26&gp=0.jpg" alt=""/>
                 </div>
+                <p>快吸秒干的拉拉裤</p>
+                <span>会员价￥1999</span>
               </li>
-            </ul> */}
+              <li>
+                <div className = "img">
+                  <img src="http://img1.imgtn.bdimg.com/it/u=1532692218,53578615&fm=26&gp=0.jpg" alt=""/>
+                </div>
+                <p>快吸秒干的拉拉裤</p>
+                <span>会员价￥1999</span>
+              </li>
+              <li>
+                <div className = "img">
+                  <img src="http://img1.imgtn.bdimg.com/it/u=1532692218,53578615&fm=26&gp=0.jpg" alt=""/>
+                </div>
+                <p>快吸秒干的拉拉裤</p>
+                <span>会员价￥1999</span>
+              </li>
+              <li>
+                <div className = "img">
+                  <img src="http://img1.imgtn.bdimg.com/it/u=1532692218,53578615&fm=26&gp=0.jpg" alt=""/>
+                </div>
+                <p>快吸秒干的拉拉裤</p>
+                <span>会员价￥1999</span>
+              </li>
+              <li>
+                <div className = "img">
+                  <img src="http://img1.imgtn.bdimg.com/it/u=1532692218,53578615&fm=26&gp=0.jpg" alt=""/>
+                </div>
+                <p>快吸秒干的拉拉裤</p>
+                <span>会员价￥1999</span>
+              </li>
+              <li>
+                <div className = "img">
+                  <img src="http://img1.imgtn.bdimg.com/it/u=1532692218,53578615&fm=26&gp=0.jpg" alt=""/>
+                </div>
+                <p>快吸秒干的拉拉裤</p>
+                <span>会员价￥1999</span>
+              </li>
+              <li>
+                <div className = "img">
+                  <img src="http://img1.imgtn.bdimg.com/it/u=1532692218,53578615&fm=26&gp=0.jpg" alt=""/>
+                </div>
+                <p>快吸秒干的拉拉裤</p>
+                <span>会员价￥1999</span>
+              </li>
+            </ul>
           </div>
         </div>
       </div>
