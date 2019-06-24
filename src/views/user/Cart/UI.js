@@ -32,6 +32,7 @@ class Com extends Component {
                     <dd>￥199.8<span>x3</span></dd>
                   </dl>
                 </AgreeItem>
+                1111111111
               </li>
               <li>
                 <AgreeItem>
