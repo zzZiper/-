@@ -326,8 +326,12 @@
         @include background-color(#fff);
         li {
           @include rect(100%,1.42rem);
-          .am-checkbox-agree {
-            @include padding(.2rem 0);
+          @include padding(.2rem 0);
+          input {
+            float: left;
+            @include rect(.2rem,.2rem);
+            border-radius: 50%;
+            @include margin(.4rem .1rem)
           }
           .img {
             float: left;
@@ -387,6 +391,35 @@
           span {
             font:.1rem/.14rem "";
             color: #999;
+          }
+        }
+      }
+    }
+    .footer {
+      position: fixed;
+      bottom: 0;
+      .box {
+        @include rect(100%,.5rem);
+        @include background-color(#eee);
+        input {
+          @include rect(.2rem, .2rem);
+        }
+        b {
+          font:.14rem/.2rem "";
+          color: #101010;
+        }
+        .add {
+          float: right;
+          font:.14rem/.2rem "";
+          color: #101010;
+          p {
+            float: left;
+          }
+          span {
+            float: left;
+            display:block;
+            @include rect(.95rem,.5rem);
+            @include background-color(#CECECE);
           }
         }
       }

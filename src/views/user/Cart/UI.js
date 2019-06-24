@@ -1,8 +1,6 @@
 import React, { Component } from 'react';
-import { NavBar, Icon, Checkbox } from 'antd-mobile';
+import { NavBar, Icon } from 'antd-mobile';
 import '@/css/user.scss';
-
-const AgreeItem = Checkbox.AgreeItem;
 
 class Com extends Component {
   componentDidMount () {
@@ -21,30 +19,28 @@ class Com extends Component {
           <div className = "top">
             <ul>
               <li>
-                <AgreeItem>
-                  <div className = "img">
-                    <img src="http://img1.imgtn.bdimg.com/it/u=1532692218,53578615&fm=26&gp=0.jpg" alt=""/>
-                  </div>
-                  <dl>
-                    <dt>6层纯棉纱布浴巾/盖毯/包巾</dt>
-                    <dd>A类品质，无荧光，无甲醛</dd>
-                    <dd>尺码：100*99cm 颜色：蓝色</dd>
-                    <dd>￥199.8<span>x3</span></dd>
-                  </dl>
-                </AgreeItem>
+                <input type="checkbox"/>
+                <div className = "img">
+                  <img src="http://img1.imgtn.bdimg.com/it/u=1532692218,53578615&fm=26&gp=0.jpg" alt=""/>
+                </div>
+                <dl>
+                  <dt>6层纯棉纱布浴巾/盖毯/包巾</dt>
+                  <dd>A类品质，无荧光，无甲醛</dd>
+                  <dd>尺码：100*99cm 颜色：蓝色</dd>
+                  <dd>￥199.8<span>x3</span></dd>
+                </dl>
               </li>
               <li>
-                <AgreeItem>
-                  <div className = "img">
-                    <img src="http://img1.imgtn.bdimg.com/it/u=1532692218,53578615&fm=26&gp=0.jpg" alt=""/>
-                  </div>
-                  <dl>
-                    <dt>6层纯棉纱布浴巾/盖毯/包巾</dt>
-                    <dd>A类品质，无荧光，无甲醛</dd>
-                    <dd>尺码：100*99cm 颜色：蓝色</dd>
-                    <dd>￥199.8<span>x2</span></dd>
-                  </dl>
-                </AgreeItem>
+                <input type="checkbox"/>
+                <div className = "img">
+                  <img src="http://img1.imgtn.bdimg.com/it/u=1532692218,53578615&fm=26&gp=0.jpg" alt=""/>
+                </div>
+                <dl>
+                  <dt>6层纯棉纱布浴巾/盖毯/包巾</dt>
+                  <dd>A类品质，无荧光，无甲醛</dd>
+                  <dd>尺码：100*99cm 颜色：蓝色</dd>
+                  <dd>￥199.8<span>x3</span></dd>
+                </dl>
               </li>
             </ul>
           </div>
@@ -116,6 +112,15 @@ class Com extends Component {
               </li>
             </ul>
           </div>
+          <footer className = "footer">
+            <div className="box">
+              <label><input type="checkbox"/>全选 </label>
+              {/* <div className = "add">
+                <p>合计: 0</p>
+                <span>结算(0)</span>
+              </div> */}
+            </div>
+          </footer>
         </div>
       </div>
     )
