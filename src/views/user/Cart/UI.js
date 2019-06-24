@@ -29,7 +29,7 @@ class Com extends Component {
                     <dt>6层纯棉纱布浴巾/盖毯/包巾</dt>
                     <dd>A类品质，无荧光，无甲醛</dd>
                     <dd>尺码：100*99cm 颜色：蓝色</dd>
-                    <dd>￥199.8<span>x2</span></dd>
+                    <dd>￥199.8<span>x3</span></dd>
                   </dl>
                 </AgreeItem>
               </li>
