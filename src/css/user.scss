@@ -319,43 +319,74 @@
     margin-top:-.4rem;
   }
   .content {
-    ul {
-      @include background-color(#fff);
-      li {
-        @include rect(100%,1.42rem);
-        .am-checkbox-agree {
-          @include padding(.2rem 0);
-        }
-        // .am-checkbox-inner {
-          // @include flexbox();
-          // @include align-items();
-          // top:.6rem;
-          // bottom: 0;
-          // bottom:1rem;
-        // }
-        .img {
-          float: left;
-          @include rect(1rem,1rem);
-          @include background-color(#EEEEEE);
-          border-radius: .08rem;
-          overflow: hidden;
-          img {
-            @include rect(100%,100%);
+    .top {
+      border-top:.01rem solid rgb(226, 226, 226);
+      border-bottom:.01rem solid rgb(226, 226, 226);
+      ul {
+        @include background-color(#fff);
+        li {
+          @include rect(100%,1.42rem);
+          .am-checkbox-agree {
+            @include padding(.2rem 0);
           }
-        }
-        dl {
-          float: left;
-          margin-left: .1rem;
-          dt {
-            font: .14rem/.3rem "";
-            color: #888888;
-          }
-          dd {
-            font: .12rem/.23rem "";
-            color: #D2D2D2;
-            span {
-              float: right;
+          .img {
+            float: left;
+            @include rect(1rem,1rem);
+            @include background-color(#EEEEEE);
+            border-radius: .08rem;
+            overflow: hidden;
+            img {
+              @include rect(100%,100%);
             }
+          }
+          dl {
+            float: left;
+            margin-left: .1rem;
+            dt {
+              font: .14rem/.3rem "";
+              color: #888888;
+            }
+            dd {
+              font: .12rem/.23rem "";
+              color: #D2D2D2;
+              span {
+                float: right;
+              }
+            }
+          }
+        }
+      }
+    }
+    .center {
+      @include rect(100%, auto);
+      h3 {
+        font:.12rem/.2rem "";
+        color: #666;
+        text-align: center;
+      }
+      ul {
+        @include flexbox();
+        @include justify-content(space-around);
+        @include flex-wrap(wrap);
+        li {
+          @include rect(1.16rem,1.4rem);
+          text-align: center;
+          .img {
+            @include rect(.86rem, .86rem);
+            @include border-radius(.08rem);
+            overflow: hidden;
+            @include margin(0 auto);
+            img {
+              @include rect(.86rem, .86rem);
+            }
+          }
+          p {
+            font:.12rem/.16rem "";
+            color: #666;
+          }
+          span {
+            font:.1rem/.14rem "";
+            color: #999;
           }
         }
       }
