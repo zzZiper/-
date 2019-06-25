@@ -7,10 +7,11 @@ import '@/css/user.scss';
 class Com extends Component {
   componentDidMount () {
     this.props.getMemberBannerListData();
+    this.props.getMemberProListData();
   }
 
   render () {
-    
+    let showlist =this.props.memberProList.data ? this.props.memberProList.data : []
     return (
       <div className = "member">
         <div className = "top">
@@ -45,38 +46,18 @@ class Com extends Component {
           <div className = "list">
             <h3>时光会员 专享好货</h3>
             <ul>
-              <li>
-                <div className = "img">
-                  <img src = "http://img1.imgtn.bdimg.com/it/u=1532692218,53578615&fm=26&gp=0.jpg" alt = ""/>
-                </div>
-                <h4>宝宝爬行垫折叠</h4>
-                <p>萌宝摔倒不疼</p>
-                <b>￥ 199.00</b>
-              </li>
-              <li>
-                <div className = "img">
-                  <img src = "" alt = ""/>
-                </div>
-                <h4>宝宝爬行垫折叠</h4>
-                <p>萌宝摔倒不疼</p>
-                <b>￥ 199.00</b>
-              </li>
-              <li>
-                <div className = "img">
-                  <img src = "" alt = ""/>
-                </div>
-                <h4>宝宝爬行垫折叠</h4>
-                <p>萌宝摔倒不疼</p>
-                <b>￥ 199.00</b>
-              </li>
-              <li>
-                <div className = "img">
-                  <img src = "" alt = ""/>
-                </div>
-                <h4>宝宝爬行垫折叠</h4>
-                <p>萌宝摔倒不疼</p>
-                <b>￥ 199.00</b>
-              </li>
+              {
+                showlist.map((item,index) => (
+                <li key={index}>
+                  <div className = "img">
+                    <img src = { item.list.src } alt = ""/>
+                  </div>
+                  <h4>{ item.list.title }</h4>
+                  <p>{ item.list.smallTitle }</p>
+                  <b>￥ { item.list.money }</b>
+                </li>
+                ))
+              }
             </ul>
           </div>
         </div>

@@ -27,6 +27,9 @@ html, body, #root, .container {
     ul {
       @include rect(100%, 100%);
       @include flexbox();
+      img {
+        @include rect(.2rem,.22rem);
+      }
       a {
         @include flex();
         @include rect(auto, 100%);
@@ -35,10 +38,10 @@ html, body, #root, .container {
         @include justify-content();
         @include align-items();
         @include text-color(#333);
-        font: .14rem/.42rem "";
+        font: .1rem/.3rem "";
         &.active {
           @include background-color(rgb(200, 200, 200));
-          @include text-color(#fff);
+          @include text-color(#FF9500);
         }
       }
     }
