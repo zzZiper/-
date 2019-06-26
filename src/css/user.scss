@@ -134,14 +134,18 @@
           @include flex-direction(column);
           @include align-items();
           .img {
+            border-radius: .08rem;
             @include rect(.5rem,.5rem);
-            @include background-color(#999);
+            @include background-color(#FC8468);
             img {
-               @include rect(.5rem,.5rem);
+               @include rect(.32rem,.32rem);
+               margin:.09rem;
             }
           }
           span {
-            font:.12rem/.3rem "";
+            font:.12rem/.12rem "";
+            color: #333;
+            margin-top: .08rem;
           }
         }
       }
@@ -169,17 +173,20 @@
               @include rect(1.5rem, 1.5rem);
             }
           }
-          h4 {
-            font:.12rem/.3rem "";
-            color: #666;
-          }
-          p {
-            font:.1rem/.23rem "";
-            color: #BDBDBD;
-          }
-          b {
-            font: .1rem/.23rem "";
-            color: #D2D2D2
+          .box {
+            padding-left: .2rem;
+            h4 {
+              font:.12rem/.3rem "";
+              color: #333;
+            }
+            p {
+              font:.1rem/.23rem "";
+              color: #666;
+            }
+            b {
+              font: .1rem/.23rem "";
+              color: #999
+            }
           }
         }
       }

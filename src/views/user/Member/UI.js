@@ -25,19 +25,19 @@ class Com extends Component {
             <ul>
               <li>
                 <div className = "img">
-                  <img src="http://img1.imgtn.bdimg.com/it/u=1532692218,53578615&fm=26&gp=0.jpg" alt="" />
+                  <img src={require('@/images/yuan.png')} alt="" />
                 </div>
                 <span>我的积分</span>
               </li>
               <li>
                 <div className = "img">
-                  <img src="" alt="" />
+                  <img src={require('@/images/gou.png')} alt="" />
                 </div>
                 <span>每日签到</span>
               </li>
               <li>
                 <div className = "img">
-                  <img src="" alt="" />
+                  <img src={require('@/images/box.png')} alt="" />
                 </div>
                 <span>我的奖品</span>
               </li>
@@ -52,9 +52,11 @@ class Com extends Component {
                   <div className = "img">
                     <img src = { item.list.src } alt = ""/>
                   </div>
-                  <h4>{ item.list.title }</h4>
-                  <p>{ item.list.smallTitle }</p>
-                  <b>￥ { item.list.money }</b>
+                  <div className = "box">
+                    <h4>{ item.list.title }</h4>
+                    <p>{ item.list.smallTitle }</p>
+                    <b>￥ { item.list.money }</b>
+                  </div>
                 </li>
                 ))
               }
