@@ -18,7 +18,7 @@ class Com extends Component {
               ]}
             >我的</NavBar>
           </header>
-          <div className = "mine">
+          <div className = "mine" >
             <div className = "box">
               <div className = "pic">
                 <div className = "img">
@@ -44,16 +44,23 @@ class Com extends Component {
               </div>
               <div className = "kind">
                 <div className = "box1">
-                  <NavLink to = "/users/member">会员中心</NavLink>
+                  <NavLink to = "/users/member">
+                  <img src={require("@/images/会员.png")} alt=""/>
+                  会员中心</NavLink>
                 </div>
                 <div className = "box2">
-                  <NavLink to = "/users/photo">制作相册</NavLink>
-                  <NavLink to = "/users/collection">我的收藏</NavLink>
+                  <NavLink to = "/users/photo">
+                  <img src={require("@/images/制作相册.png")} alt=""/>制作相册</NavLink>
+                  <NavLink to = "/users/collection">
+                  <img src={require("@/images/收藏.png")} alt=""/>我的收藏</NavLink>
                 </div>
                 <div className = "box3">
-                  <NavLink to = "/users/cart">购物车</NavLink>
-                  <NavLink to = "/users/order">我的订单</NavLink>
-                  <NavLink to = "/users/coupon">优惠卷</NavLink>
+                  <NavLink to = "/users/cart">
+                  <img src={require("@/images/购物车.png")} alt=""/>购物车</NavLink>
+                  <NavLink to = "/users/order">
+                  <img src={require("@/images/订单.png")} alt=""/>我的订单</NavLink>
+                  <NavLink to = "/users/coupon">
+                  <img src={require("@/images/优惠券.png")} alt=""/>优惠卷</NavLink>
                 </div>
               </div>
           </div>

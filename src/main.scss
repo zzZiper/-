@@ -18,17 +18,17 @@ html, body, #root, .container {
       .slider-decorator-0{
         display: none;
       }
-      
     }
   }
   .footer {
-    @include rect(100%, 0.42rem);
-    @include background-color(#E8E7E7);
+    @include rect(100%, 0.5rem);
+    @include background-color(rgb(243, 243, 243));
+    border-top:1px solid rgb(221, 221, 221);
     ul {
       @include rect(100%, 100%);
       @include flexbox();
       img {
-        @include rect(.2rem,.22rem);
+        @include rect(.22rem,.22rem);
       }
       a {
         @include flex();
@@ -38,9 +38,11 @@ html, body, #root, .container {
         @include justify-content();
         @include align-items();
         @include text-color(#333);
-        font: .1rem/.3rem "";
+        font: .1rem/.1rem "";
+        p {
+          @include margin(.08rem 0 0 0 );
+        }
         &.active {
-          @include background-color(rgb(200, 200, 200));
           @include text-color(#FF9500);
         }
       }

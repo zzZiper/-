@@ -19,23 +19,23 @@ const Com = () => (
     <footer className = "footer">
       <ul>
         <NavLink to = "/silkbag">
-          <span></span>
+          <img src={require("@/images/锦囊-1.png")} alt=""/>
           <p>锦囊</p>
         </NavLink>
         <NavLink to = "/life">
-          <span></span>
+          <img src={require("@/images/生活-1.png")} alt=""/>
           <p>生活</p>
         </NavLink>
         <NavLink to = "/time">
-          <span></span>
+          <img src={require("@/images/时光机-1.png")} alt=""/>
           <p>时光记</p>
         </NavLink>
         <NavLink to = "/msg">
-          <span></span>
+          <img src={require("@/images/消息-1.png")} alt=""/>
           <p>消息</p>
         </NavLink>
         <NavLink to = "/user">
-          <span></span>
+          <img src={require("@/images/我的-1.png")} alt=""/>
           <p>我的</p>
         </NavLink>
       </ul>

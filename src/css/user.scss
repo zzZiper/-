@@ -41,10 +41,11 @@
       }
     }
     .list {
-      @include padding(.1rem .19rem);
+      @include padding(.1rem .1rem);
+      @include background-color(rgb(245, 243, 243));
       ul {
         @include rect(100%, .9rem);
-        @include background-color(#E8E7E7);
+        @include background-color(#fff);
         @include flexbox();
         @include justify-content(space-between);
         @include padding(0 .3rem);
@@ -66,11 +67,17 @@
       .kind {
         margin-top:.2rem;
         div {
-          border-bottom: 1px solid #cccccc;
+          padding: .1rem;
+          margin-top:.06rem;
+          @include background-color(#fff);
           a {
             display: block;
-            color: #646464;
+            color: #333;
             font: .14rem/.42rem "";
+            img{
+              @include rect(.2rem,.2rem);
+              margin-right:.1rem;
+            }
           }
         }
       }
