@@ -6,7 +6,7 @@
     .top {
       .am-navbar.am-navbar-light {
         @include rect(100%, .5rem);
-        @include background-color(#E8E7E7);
+        @include background-color(#fff);
         .am-navbar-title {
           font: .14rem/.5rem "";
         }
@@ -17,9 +17,9 @@
     }
     .mine {
       @include rect(100%,1.78rem);
-      @include background-color(#E8E7E7);
       border-radius:0 0 70% 70%;
       position: relative;
+      color: #fff;
       .box {
         text-align: center;
         .pic {
@@ -57,10 +57,12 @@
           @include justify-content();
           @include align-items();
           p {
-            font: .12rem/.22rem "";
+            font: .12rem/.44rem "";
+            color: #333;
           }
           span {
-            font: .14rem/.42rem "";
+            font: .14rem/.28rem "";
+            color: #333;
           }
         }
       }
@@ -410,24 +412,7 @@
         @include background-color(#eee);
         input {
           @include rect(.2rem, .2rem);
-        }
-        b {
-          font:.14rem/.2rem "";
-          color: #101010;
-        }
-        .add {
-          float: right;
-          font:.14rem/.2rem "";
-          color: #101010;
-          p {
-            float: left;
-          }
-          span {
-            float: left;
-            display:block;
-            @include rect(.95rem,.5rem);
-            @include background-color(#CECECE);
-          }
+          float: left;
         }
       }
     }

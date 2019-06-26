@@ -18,11 +18,14 @@ class Com extends Component {
               ]}
             >我的</NavBar>
           </header>
-          <div className = "mine" >
+          <div className = "mine" style={{
+            backgroundImage: `url(${require("@/images/底.png")})`,
+            backgroundSize: '100%'
+          }} >
             <div className = "box">
               <div className = "pic">
                 <div className = "img">
-                  <img src="https://img.alicdn.com/imgextra/i2/31442024/O1CN01A9VbvC1Qp2Aw2d6fq_!!0-saturn_solar.jpg_220x220.jpg_.webp" alt="" />
+                  <img src={require("@/images/图层8.png")} alt="" />
                 </div>
               </div>
               <p>爱上了健康的哈</p>

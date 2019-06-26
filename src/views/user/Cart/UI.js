@@ -115,10 +115,10 @@ class Com extends Component {
           <footer className = "footer">
             <div className="box">
               <label><input type="checkbox"/>全选 </label>
-              <div className = "add">
+              {/* <div className = "add">
                 <p>合计: 0</p>
                 <span>结算(0)</span>
-              </div>
+              </div> */}
             </div>
           </footer>
         </div>
