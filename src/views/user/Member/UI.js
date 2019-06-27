@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { NavBar, Icon } from 'antd-mobile';
-import  MemberBanner from '@/components/common/MemberBanner';
+// import  MemberBanner from '@/components/common/MemberBanner';
 
 import '@/css/user.scss';
 
@@ -19,7 +19,8 @@ class Com extends Component {
             icon={<Icon type="left" onClick = { () => (this.props.history.go(-1)) }/> }
           >会员中心</NavBar>
         </div>
-        <MemberBanner memberbannerlist = { this.props.memberBannerList.data ? this.props.memberBannerList.data : []  }/>
+        <img src={require('@/images/spring.png')} alt="" />
+        {/* <MemberBanner memberbannerlist = { this.props.memberBannerList.data ? this.props.memberBannerList.data : []  }/> */}
         <div className = "show">
           <div className = "top">
             <ul>

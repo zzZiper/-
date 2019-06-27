@@ -20,64 +20,59 @@ class Com extends Component {
             <ul>
               <li>
                 <div className = "img">
-                  <img src = "http://img1.imgtn.bdimg.com/it/u=1532692218,53578615&fm=26&gp=0.jpg" alt = ""/>
+                  <img src = {require('@/images/图层 2.png')} alt = ""/>
                 </div>
                 <div className = "box">
                   <h3>小坚果大能量</h3>
-                  <p>2019.10.2</p>
-                  <span className = "iconfont icon02"></span>
+                  <p>2019.10.2<span>1111</span><img src={require('@/images/xin.png') } alt=""/></p>
                 </div>
               </li>
               <li>
                 <div className = "img">
-                  <img src = "http://img1.imgtn.bdimg.com/it/u=1532692218,53578615&fm=26&gp=0.jpg" alt = ""/>
+                  <img src = {require('@/images/图层 2.png')} alt = ""/>
                 </div>
                 <div className = "box">
                   <h3>小坚果大能量</h3>
-                  <p>2019.10.2</p>
-                  <span className = "iconfont icon02"></span>
+                  <p>2019.10.2<span>1111</span><img src={require('@/images/xin.png')} alt=""/></p>
                 </div>
               </li>
               <li>
                 <div className = "img">
-                  <img src = "http://img1.imgtn.bdimg.com/it/u=1532692218,53578615&fm=26&gp=0.jpg" alt = ""/>
+                  <img src = {require('@/images/图层 2.png')} alt = ""/>
                 </div>
                 <div className = "box">
                   <h3>小坚果大能量</h3>
-                  <p>2019.10.2</p>
-                  <span className = "iconfont icon02"></span>
+                  <p>2019.10.2<span>1111</span><img src={require('@/images/xin.png')} alt=""/></p>
                 </div>
               </li>
               <li>
                 <div className = "img">
-                  <img src = "http://img1.imgtn.bdimg.com/it/u=1532692218,53578615&fm=26&gp=0.jpg" alt = ""/>
+                  <img src = {require('@/images/图层 2.png')} alt = ""/>
                 </div>
                 <div className = "box">
                   <h3>小坚果大能量</h3>
-                  <p>2019.10.2</p>
-                  <span className = "iconfont icon02"></span>
+                  <p>2019.10.2<span>1111</span><img src={require('@/images/xin.png')} alt=""/></p>
                 </div>
               </li>
               <li>
                 <div className = "img">
-                  <img src = "http://img1.imgtn.bdimg.com/it/u=1532692218,53578615&fm=26&gp=0.jpg" alt = ""/>
+                  <img src = {require('@/images/图层 2.png')} alt = ""/>
                 </div>
                 <div className = "box">
                   <h3>小坚果大能量</h3>
-                  <p>2019.10.2</p>
-                  <span className = "iconfont icon02"></span>
+                  <p>2019.10.2<span>1111</span><img src={require('@/images/xin.png')} alt=""/></p>
                 </div>
               </li>
               <li>
                 <div className = "img">
-                  <img src = "http://img1.imgtn.bdimg.com/it/u=1532692218,53578615&fm=26&gp=0.jpg" alt = ""/>
+                  <img src = {require('@/images/图层 2.png')} alt = ""/>
                 </div>
                 <div className = "box">
                   <h3>小坚果大能量</h3>
-                  <p>2019.10.2</p>
-                  <span className = "iconfont icon02"></span>
+                  <p>2019.10.2<span>1111</span><img src={require('@/images/xin.png')} alt=""/></p>
                 </div>
               </li>
+              
             </ul>
           </div>
         </div>

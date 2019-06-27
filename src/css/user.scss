@@ -1,6 +1,8 @@
 @import '@/lib/reset.scss';
 * { touch-action: pan-y }
 
+
+// user页
 .box {
   .content {
     .top {
@@ -90,17 +92,18 @@
 
 // 会员中心
 .member {
+  @include rect(100%,auto);
   overflow: auto;
   .top {
     .am-navbar.am-navbar-dark {
       @include rect(100%, .42rem);
       @include background-color(#fff);
       .am-navbar-title {
-        font:.14rem/42rem "";
-        color: #646464 ;
+        font:.18rem/42rem "";
+        color: #333;
       }
       .am-icon.am-icon-left.am-icon-md {
-        color: #646464 ;
+        color: #333 ;
       }
     }
   }
@@ -124,7 +127,7 @@
     @include border-radius(.12rem .12rem 0 0);
     .top {
       ul {
-        @include rect(100%, 1rem);
+        @include rect(100%,1rem);
         @include flexbox();
         @include flex-direction();
         @include justify-content(space-around);
@@ -167,6 +170,8 @@
           @include flex-direction(column);
           margin-top:.1rem;
           .img {
+            @include border-radius(.12rem);
+            overflow: hidden;
             @include rect(1.5rem, 1.5rem);
             @include background-color(#444);
             img {
@@ -174,17 +179,17 @@
             }
           }
           .box {
-            padding-left: .2rem;
+            padding-left: .16rem;
             h4 {
-              font:.12rem/.3rem "";
+              font:.12rem/.22rem "";
               color: #333;
             }
             p {
-              font:.1rem/.23rem "";
+              font:.1rem/.22rem "";
               color: #666;
             }
             b {
-              font: .1rem/.23rem "";
+              font: .1rem/.20rem "";
               color: #999
             }
           }
@@ -200,14 +205,14 @@
   overflow: auto;
   .top {
     .am-navbar.am-navbar-dark {
-      @include rect(100%, .42rem);
+      @include rect(100%, .44rem);
       @include background-color(#fff);
       .am-navbar-title {
-        font:.14rem/42rem "";
-        color: #646464 ;
+        font:.18rem/42rem "";
+        color: #333 ;
       }
       .am-icon.am-icon-left.am-icon-md {
-        color: #646464 ;
+        color: #333 ;
       }
     }
   }
@@ -215,41 +220,39 @@
     margin-top:-.4rem;
   }
   .show {
-    @include background-color(#fff);
+    @include background-color(rgb(238, 238, 238));
     .list {
-      @include padding(.1rem .3rem);
+      @include padding(.1rem .16rem);
       ul {
         @include flexbox();
         @include flex-wrap(wrap);
         @include justify-content(space-between);
         li {
           overflow: hidden;
-          @include rect(1.5rem, 1.8rem);
+          @include rect(1.6rem, 1.6rem);
           @include border-radius(.08rem .08rem 0 0);
-          @include background-color(#E6E6E6);
+          @include background-color(#fff);
           @include margin(.2rem 0);
           .img {
             border-bottom: .01rem solid #BBBBBB;
             img {
-              @include rect(1.5rem,1rem);
+              @include rect(1.6rem,1.2rem);
             }
           }
           .box {
             @include padding(0 .1rem);
             h3 {
-              font:.12rem/.3rem "";
-              color: #646464;
+              font:.10rem/.2rem "";
+              color: #333;
             }
             p {
-              font:.1rem/.24rem "";
-              color: #D2D2D2;
-            }
-            span {
-              font:.24rem/.24rem "";
-              color: #101010;
-              position: relative;
-              left:1rem;
-              bottom: .1rem;
+              font:.1rem/.14rem "";
+              color: #999;
+              img, span {
+                float: right;
+                font:.1rem/.1rem "";
+                margin-left: .06rem;
+              }
             }
           }
         }
@@ -266,11 +269,11 @@
       @include rect(100%, .42rem);
       @include background-color(#fff);
       .am-navbar-title {
-        font:.14rem/42rem "";
-        color: #646464 ;
+        font:.18rem/42rem "";
+        color: #333 ;
       }
       .am-icon.am-icon-left.am-icon-md {
-        color: #646464 ;
+        color: #333 ;
       }
     }
   }
@@ -320,14 +323,14 @@
   overflow: auto;
   .top {
     .am-navbar.am-navbar-dark {
-      @include rect(100%, .42rem);
-      @include background-color(#F9F9F9);
+      @include rect(100%, .44rem);
+      @include background-color(rgb(241, 241, 241));
       .am-navbar-title {
-        font:.14rem/42rem "";
-        color: #646464 ;
+        font:.18rem/42rem "";
+        color: #333 ;
       }
       .am-icon.am-icon-left.am-icon-md {
-        color: #646464 ;
+        color: #333 ;
       }
     }
   }
@@ -336,21 +339,42 @@
   }
   .content {
     .top {
-      border-top:.01rem solid rgb(226, 226, 226);
       border-bottom:.01rem solid rgb(226, 226, 226);
-      ul {
-        @include background-color(#fff);
-        li {
-          @include rect(100%,1.42rem);
-          @include padding(.2rem 0);
-          input {
-            float: left;
-            @include rect(.2rem,.2rem);
-            border-radius: 50%;
-            @include margin(.4rem .1rem)
+      @include background-color(#fff);
+      h3 {
+        @include rect(100%,.42rem);
+        font:.14rem/.42rem "";
+        color: #999;
+        padding:0 .1rem;
+        border-bottom:.01rem solid rgb(226, 226, 226);
+        i {
+          margin-right: .1rem;
+          font-size: .18rem;
+          @include text-color(#ccc);
+          &.visited {
+            @include text-color(red);
           }
-          .img {
-            float: left;
+        }
+        span {
+          float: right;
+        }
+        b {
+          float: right;
+          margin-left: .1rem;
+        }
+      }
+      .cont {
+        @include rect(100%,1.42rem);
+        @include padding(.2rem 0);
+        border-bottom:.01rem solid rgb(226, 226, 226);
+        i {
+          float: left;
+          font-size: .18rem;
+          @include margin(.4rem .1rem);
+          @include text-color(#ccc);
+        }
+        .img {
+          float: left;
             @include rect(1rem,1rem);
             @include background-color(#EEEEEE);
             border-radius: .08rem;
@@ -358,23 +382,58 @@
             img {
               @include rect(100%,100%);
             }
+        }
+        dl {
+          float: left;
+          margin-left: .1rem;
+          dt {
+            font: .14rem/.3rem "";
+            color: #888888;
           }
-          dl {
-            float: left;
-            margin-left: .1rem;
-            dt {
-              font: .14rem/.3rem "";
-              color: #888888;
-            }
-            dd {
-              font: .12rem/.23rem "";
-              color: #D2D2D2;
-              span {
-                float: right;
-              }
+          dd {
+            font: .12rem/.23rem "";
+            color: #D2D2D2;
+            span {
+              float: right;
             }
           }
         }
+        // li {
+        //   @include rect(100%,1.42rem);
+        //   @include padding(.2rem 0);
+        //   input {
+        //     float: left;
+        //     @include rect(.2rem,.2rem);
+        //     border-radius: 50%;
+        //     @include margin(.4rem .1rem)
+        //   }
+        //   .img {
+        //     float: left;
+        //     @include rect(1rem,1rem);
+        //     @include background-color(#EEEEEE);
+        //     border-radius: .08rem;
+        //     overflow: hidden;
+        //     img {
+        //       @include rect(100%,100%);
+        //     }
+        //   }
+        //   dl {
+        //     float: left;
+        //     margin-left: .1rem;
+        //     dt {
+        //       font: .14rem/.3rem "";
+        //       color: #888888;
+        //     }
+        //     dd {
+        //       font: .12rem/.23rem "";
+        //       color: #D2D2D2;
+        //       span {
+        //         float: right;
+        //       }
+        //     }
+        //   }
+        // }
+        
       }
     }
     .center {
@@ -421,6 +480,82 @@
           @include rect(.2rem, .2rem);
           float: left;
         }
+      }
+    }
+  }
+}
+
+
+// 我的订单
+.order {
+  overflow: auto;
+  .top {
+    .am-navbar.am-navbar-dark {
+      @include rect(100%, .42rem);
+      @include background-color(#F9F9F9);
+      .am-navbar-title {
+        font:.18rem/42rem "";
+        color: #333 ;
+      }
+      .am-icon.am-icon-left.am-icon-md {
+        color: #333 ;
+      }
+    }
+  }
+  .content {
+    ul {
+      @include rect(100%,atuo);
+      li,a {
+        display: block;
+        padding: .15rem 0 .15rem .2rem;
+        border-bottom: .01rem solid #ccc;    
+        img {
+          @include rect(.36rem,.36rem);
+          border-radius: .06rem;
+        }
+        span {
+          font:.14rem/.2rem "";
+          color: #101010;
+          margin-left: .1rem;
+        }
+
+      }  
+    }
+  }
+}
+
+
+// 待收货
+.deceiving {
+  overflow: auto;
+  .top {
+    @include rect(100%,2.3rem);
+    span {
+      display: block;
+      @include rect(.3rem,.3rem);
+      @include background-color(#C6C5C5);
+      @include border-radius(50%);
+      text-align: center;
+      font-size: .2rem;
+      font-family: "宋体";
+      color: #101010;
+      margin-left: .1rem;
+    }
+  }
+  .center {
+    @include rect(90%,1.74rem);
+    @include background-color(#fff);
+    @include margin(-.87rem 0 0 5%);
+    position: absolute;
+    .time {
+      @include rect(1rem,1rem);
+      border-radius:50%;
+      border:1px solid #FF9800;
+      @include background-color(#fff);
+      margin:-.5rem auto;
+      text-align: center;
+      p {
+        font: .12rem/.18rem "";
       }
     }
   }
