@@ -7,10 +7,10 @@
   .content {
     .top {
       .am-navbar.am-navbar-light {
-        @include rect(100%, .5rem);
+        @include rect(100%, .44rem);
         @include background-color(#fff);
         .am-navbar-title {
-          font: .14rem/.5rem "";
+          font: .18rem/.5rem "";
         }
         .am-navbar-right {
           font: .1rem/.5rem "";
@@ -498,6 +498,7 @@
             right: 0;
             p {
               font:.12rem/.44rem "";
+              color: #101010;
             }
           }
         }
@@ -506,16 +507,16 @@
   }
 }
 
-
 // 我的订单
 .order {
   overflow: auto;
+  @include background-color(rgb(240, 240, 240));
   .top {
     .am-navbar.am-navbar-dark {
-      @include rect(100%, .42rem);
+      @include rect(100%, .44rem);
       @include background-color(#F9F9F9);
       .am-navbar-title {
-        font:.18rem/42rem "";
+        font:.18rem/44rem "";
         color: #333 ;
       }
       .am-icon.am-icon-left.am-icon-md {
@@ -525,14 +526,14 @@
   }
   .content {
     ul {
-      @include rect(100%,atuo);
+      @include rect(100%,auto);
       li,a {
         display: block;
         padding: .15rem 0 .15rem .2rem;
-        border-bottom: .01rem solid #ccc;    
+        margin-top:.08rem;
+        @include background-color(#fff);
         img {
-          @include rect(.36rem,.36rem);
-          border-radius: .06rem;
+          @include rect(.29rem,.29rem);
         }
         span {
           font:.14rem/.2rem "";
@@ -578,6 +579,133 @@
       p {
         font: .12rem/.18rem "";
       }
+    }
+  }
+}
+
+// 待收货
+.confirm {
+  .top {
+    .am-navbar.am-navbar-dark {
+      @include rect(100%, .44rem);
+      @include background-color(#F9F9F9);
+      .am-navbar-title {
+        font:.18rem/44rem "";
+        color: #333 ;
+      }
+      .am-icon.am-icon-left.am-icon-md {
+        color: #333 ;
+      }
+    }
+  }
+  .center {
+    .address {
+      overflow: hidden;
+      @include background-color(#fff);
+      margin-top:.1rem;
+      padding:.1rem;
+      .box {
+        border: .01rem solid #999;
+        @include rect(.48rem,.17rem);
+        border-radius: .1rem;
+        text-align: center;
+        font:.12rem/.18rem "";
+        float: left;
+      }
+      .te {
+        font:.14rem/.18rem "";
+        float: left;
+        @include rect(80%,auto);
+        margin-left: .1rem;
+        b {
+          float: right;
+        }
+      }
+      .te1 {
+        font:.14rem/.28rem "";
+        float: left;
+        margin-top: .1rem;
+        b {
+          font:.14rem/.28rem "";
+          margin-left: .2rem;
+          color: #333;
+        }
+      }
+    }
+    .goods {
+      @include rect(100%,auto);
+      @include background-color(#fff);
+      margin-top: .08rem;
+      h3 {
+        font:.14rem/.38rem "";
+        padding-left: .16rem;
+        color: #333;
+        border-bottom:.01rem solid rgb(240, 239, 239);
+      }
+      .list {
+        padding:.16rem;
+        overflow: hidden;
+        border-bottom:.01rem solid #eeeeee;
+        .img {
+          float: left;
+          @include rect(.75rem,.75rem);
+          @include background-color(#EEEEEE);
+          border-radius: .08rem;
+          overflow: hidden;
+          margin-right: .1rem;
+          img {
+            @include rect(100%,100%);
+          }
+        }
+        .shop {
+          float: left;
+          @include rect(75%,auto);
+          .p1 {
+            font: .14rem/.3rem "";
+            color: #333;
+            span {
+              float: right;
+            }
+          }
+          .p2 {
+            font: .12rem/.2rem "";
+            color: #666;
+            span {
+              float: right;
+            }
+          }
+        }
+      }
+      .all {
+        border-bottom: .01rem solid #eee;
+        overflow: hidden;
+        padding-right: .16rem;
+        .box {
+          float: right;
+          text-align: right;
+          span {
+            font:.12rem/2 "";
+            color: #666;
+            margin-left: .3rem;
+          }
+          p {
+            font:.12rem/2 "";
+            color: #666;
+          }
+        }
+      }
+    }
+    .pay {
+      margin-top: .1rem;
+      h3 {
+        @include background-color(#fff);
+        @include rect(100%,.34rem);
+        font:.14rem/.34rem "";
+        padding:0 .16rem;
+      }
+      // .am-list-body {
+      //   font:.14rem/.34rem "";
+      // }
     }
   }
 }

@@ -19,31 +19,31 @@ class Com extends Component {
         <div className="content">
           <ul>
             <li>
-              <img src="http://img1.imgtn.bdimg.com/it/u=1532692218,53578615&fm=26&gp=0.jpg" alt=""/>
+              <img src={require('@/images/全部.png')} alt=""/>
               <span>全部</span>
             </li>
             <li>
-              <img src="http://img1.imgtn.bdimg.com/it/u=1532692218,53578615&fm=26&gp=0.jpg" alt=""/>
+              <img src={require('@/images/待收款.png')} alt=""/>
               <span>待付款</span>
             </li>
             <NavLink to= "/users/receiving">
-              <img src="http://img1.imgtn.bdimg.com/it/u=1532692218,53578615&fm=26&gp=0.jpg" alt=""/>
+              <img src={require('@/images/待收货.png')} alt=""/>
               <span>待收货</span>
             </NavLink>
             <li>
-              <img src="http://img1.imgtn.bdimg.com/it/u=1532692218,53578615&fm=26&gp=0.jpg" alt=""/>
+              <img src={require('@/images/待发货.png')} alt=""/>
               <span>代发货</span>
             </li>
             <li>
-              <img src="http://img1.imgtn.bdimg.com/it/u=1532692218,53578615&fm=26&gp=0.jpg" alt=""/>
+              <img src={require('@/images/已完成.png')} alt=""/>
               <span>已完成</span>
             </li>
             <li>
-              <img src="http://img1.imgtn.bdimg.com/it/u=1532692218,53578615&fm=26&gp=0.jpg" alt=""/>
+              <img src={require('@/images/评价.png')} alt=""/>
               <span>评价</span>
             </li>
             <li>
-              <img src="http://img1.imgtn.bdimg.com/it/u=1532692218,53578615&fm=26&gp=0.jpg" alt=""/>
+              <img src={require('@/images/售后.png')} alt=""/>
               <span>退款/售后</span>
             </li>
           </ul>

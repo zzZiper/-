@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { NavBar, Icon } from 'antd-mobile';
+import { NavLink } from 'react-router-dom';
 import '@/css/user.scss';
 
 class Com extends Component {
@@ -124,9 +125,9 @@ class Com extends Component {
                 <div className="add-l">
                   <p>不含运费<span>￥0</span></p>
                 </div>
-                <div className="add-r">
+                <NavLink className="add-r" to="/users/confirm">
                   <p>结算<span>(0)</span></p>
-                </div>
+                </NavLink>
               </div>
             </div>
           </footer>

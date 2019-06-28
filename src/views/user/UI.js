@@ -13,9 +13,7 @@ class Com extends Component {
       <div className = "box">
         <div className = "content">
           <header className = "top">
-            <NavBar mode="light" rightContent={[
-                <span style={{color:'#333'}} key="">设置</span>
-              ]}
+            <NavBar mode="light"
             >我的</NavBar>
           </header>
           <div className = "mine" style={{
