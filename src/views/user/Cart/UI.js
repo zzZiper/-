@@ -12,127 +12,105 @@ class Com extends Component {
       <div className = "cart">
         <div className = "top">
           <NavBar
-            icon={<Icon type="left" onClick = { () => (this.props.history.go(-1)) }/> }
-            >购物车</NavBar>
+          icon={<Icon type="left" onClick = { () => (this.props.history.go(-1)) }/> }
+          >购物车</NavBar>
+          {/* <b>编辑</b> */}
         </div>
         <div className = "content">
           <div className="top">
-            <h3><i className="iconfont icondui"></i>时光优品<b>编辑</b><span>共2件</span></h3>
+            <h3><i className="iconfont icondui" href=""></i>时光优品<span>共2件</span></h3>
             <div className="cont">
               <i className="iconfont icondui"></i>
               <div className = "img">
-                <img src="http://img1.imgtn.bdimg.com/it/u=1532692218,53578615&fm=26&gp=0.jpg" alt=""/>
+                <img src={require('@/images/cart1.png')} alt=""/>
               </div>
-              <dl>
-                <dt>6层纯棉纱布浴巾/盖毯/包巾</dt>
-                <dd>A类品质，无荧光，无甲醛</dd>
-                <dd>尺码：100*99cm 颜色：蓝色</dd>
-                <dd>￥199.8<span>x3</span></dd>
-              </dl>
+              <div className="shop">
+                <p className="p1">益智不倒翁玩具</p>
+                <p className="p2">规格：套装</p>
+                <div className="about">
+                  <span>￥199</span>
+                  <div className="num">
+                    <span>-</span>
+                    <span className="te">2</span>
+                    <span>+</span>
+                  </div>
+                </div>
+              </div>
             </div>
             <div className="cont">
               <i className="iconfont icondui"></i>
               <div className = "img">
-                <img src="http://img1.imgtn.bdimg.com/it/u=1532692218,53578615&fm=26&gp=0.jpg" alt=""/>
+                <img src={require('@/images/cart1.png')} alt=""/>
               </div>
-              <dl>
-                <dt>6层纯棉纱布浴巾/盖毯/包巾</dt>
-                <dd>A类品质，无荧光，无甲醛</dd>
-                <dd>尺码：100*99cm 颜色：蓝色</dd>
-                <dd>￥199.8<span>x3</span></dd>
-              </dl>
+              <div className="shop">
+                <p className="p1">益智不倒翁玩具</p>
+                <p className="p2">规格：套装</p>
+                <div className="about">
+                  <span>￥199</span>
+                  <div className="num">
+                    <span>-</span>
+                    <span className="te">2</span>
+                    <span>+</span>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
-          {/* <div className = "top">
-            <ul>
-              <li>
-                <input type="checkbox"/>
-                <div className = "img">
-                  <img src="http://img1.imgtn.bdimg.com/it/u=1532692218,53578615&fm=26&gp=0.jpg" alt=""/>
-                </div>
-                <dl>
-                  <dt>6层纯棉纱布浴巾/盖毯/包巾</dt>
-                  <dd>A类品质，无荧光，无甲醛</dd>
-                  <dd>尺码：100*99cm 颜色：蓝色</dd>
-                  <dd>￥199.8<span>x3</span></dd>
-                </dl>
-              </li>
-              <li>
-                <input type="checkbox"/>
-                <div className = "img">
-                  <img src="http://img1.imgtn.bdimg.com/it/u=1532692218,53578615&fm=26&gp=0.jpg" alt=""/>
-                </div>
-                <dl>
-                  <dt>6层纯棉纱布浴巾/盖毯/包巾</dt>
-                  <dd>A类品质，无荧光，无甲醛</dd>
-                  <dd>尺码：100*99cm 颜色：蓝色</dd>
-                  <dd>￥199.8<span>x3</span></dd>
-                </dl>
-              </li>
-            </ul>
-          </div> */}
           <div className = "center">
             <h3>宝宝可能还需要</h3>
             <ul>
               <li>
                 <div className = "img">
-                  <img src="http://img1.imgtn.bdimg.com/it/u=1532692218,53578615&fm=26&gp=0.jpg" alt=""/>
+                  <img src={require('@/images/cart2.png')} alt=""/>
+                </div>
+                <p>宝宝学步车</p>
+                <span>￥1999</span>
+              </li>
+              <li>
+                <div className = "img">
+                  <img src={require('@/images/cart2.png')} alt=""/>
                 </div>
                 <p>快吸秒干的拉拉裤</p>
                 <span>会员价￥1999</span>
               </li>
               <li>
                 <div className = "img">
-                  <img src="http://img1.imgtn.bdimg.com/it/u=1532692218,53578615&fm=26&gp=0.jpg" alt=""/>
+                  <img src={require('@/images/cart2.png')} alt=""/>
                 </div>
                 <p>快吸秒干的拉拉裤</p>
                 <span>会员价￥1999</span>
               </li>
               <li>
                 <div className = "img">
-                  <img src="http://img1.imgtn.bdimg.com/it/u=1532692218,53578615&fm=26&gp=0.jpg" alt=""/>
+                  <img src={require('@/images/cart2.png')} alt=""/>
                 </div>
                 <p>快吸秒干的拉拉裤</p>
                 <span>会员价￥1999</span>
               </li>
               <li>
                 <div className = "img">
-                  <img src="http://img1.imgtn.bdimg.com/it/u=1532692218,53578615&fm=26&gp=0.jpg" alt=""/>
+                  <img src={require('@/images/cart2.png')} alt=""/>
                 </div>
                 <p>快吸秒干的拉拉裤</p>
                 <span>会员价￥1999</span>
               </li>
               <li>
                 <div className = "img">
-                  <img src="http://img1.imgtn.bdimg.com/it/u=1532692218,53578615&fm=26&gp=0.jpg" alt=""/>
+                  <img src={require('@/images/cart2.png')} alt=""/>
                 </div>
                 <p>快吸秒干的拉拉裤</p>
                 <span>会员价￥1999</span>
               </li>
               <li>
                 <div className = "img">
-                  <img src="http://img1.imgtn.bdimg.com/it/u=1532692218,53578615&fm=26&gp=0.jpg" alt=""/>
+                  <img src={require('@/images/cart2.png')} alt=""/>
                 </div>
                 <p>快吸秒干的拉拉裤</p>
                 <span>会员价￥1999</span>
               </li>
               <li>
                 <div className = "img">
-                  <img src="http://img1.imgtn.bdimg.com/it/u=1532692218,53578615&fm=26&gp=0.jpg" alt=""/>
-                </div>
-                <p>快吸秒干的拉拉裤</p>
-                <span>会员价￥1999</span>
-              </li>
-              <li>
-                <div className = "img">
-                  <img src="http://img1.imgtn.bdimg.com/it/u=1532692218,53578615&fm=26&gp=0.jpg" alt=""/>
-                </div>
-                <p>快吸秒干的拉拉裤</p>
-                <span>会员价￥1999</span>
-              </li>
-              <li>
-                <div className = "img">
-                  <img src="http://img1.imgtn.bdimg.com/it/u=1532692218,53578615&fm=26&gp=0.jpg" alt=""/>
+                  <img src={require('@/images/cart2.png')} alt=""/>
                 </div>
                 <p>快吸秒干的拉拉裤</p>
                 <span>会员价￥1999</span>
@@ -141,12 +119,12 @@ class Com extends Component {
           </div>
           <footer className = "footer">
             <div className="box">
-              <label><input type="checkbox"/>全选 </label>
+              <i className="iconfont icondui"><span>全选</span></i>
               <div className = "add">
-                <div className="left">
-                  <p>合计：<span>￥199</span></p>
+                <div className="add-l">
+                  <p>不含运费<span>￥0</span></p>
                 </div>
-                <div className="right">
+                <div className="add-r">
                   <p>结算<span>(0)</span></p>
                 </div>
               </div>

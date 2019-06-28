@@ -324,18 +324,21 @@
   .top {
     .am-navbar.am-navbar-dark {
       @include rect(100%, .44rem);
-      @include background-color(rgb(241, 241, 241));
+      @include background-color(rgb(245, 245, 245));
       .am-navbar-title {
         font:.18rem/42rem "";
         color: #333 ;
+        @include rect(auto,100%);
       }
       .am-icon.am-icon-left.am-icon-md {
         color: #333 ;
       }
     }
-  }
-  .am-carousel-wrap {
-    margin-top:-.4rem;
+    // b {
+    //   position: relative;
+    //   right: -90%;
+    //   bottom: .34rem;
+    // }
   }
   .content {
     .top {
@@ -351,31 +354,27 @@
           margin-right: .1rem;
           font-size: .18rem;
           @include text-color(#ccc);
-          &.visited {
+          &.active {
             @include text-color(red);
           }
         }
         span {
           float: right;
         }
-        b {
-          float: right;
-          margin-left: .1rem;
-        }
       }
       .cont {
-        @include rect(100%,1.42rem);
-        @include padding(.2rem 0);
-        border-bottom:.01rem solid rgb(226, 226, 226);
+        @include rect(100%,1rem);
+        @include padding(.1rem 0);
+        border-bottom:.01rem solid #eeeeee;
         i {
           float: left;
           font-size: .18rem;
-          @include margin(.4rem .1rem);
+          @include margin(.24rem .1rem);
           @include text-color(#ccc);
         }
         .img {
           float: left;
-            @include rect(1rem,1rem);
+            @include rect(.75rem,.75rem);
             @include background-color(#EEEEEE);
             border-radius: .08rem;
             overflow: hidden;
@@ -383,64 +382,48 @@
               @include rect(100%,100%);
             }
         }
-        dl {
+        .shop {
           float: left;
-          margin-left: .1rem;
-          dt {
+          margin-left: .16rem;
+          @include rect(60%,auto);
+          .p1 {
             font: .14rem/.3rem "";
-            color: #888888;
+            color: #333;
           }
-          dd {
-            font: .12rem/.23rem "";
-            color: #D2D2D2;
+          .p2 {
+            font: .12rem/.2rem "";
+            color: #666;
+          }
+          .about {
+            margin-top:.1rem;
             span {
+              font: .12rem/.2rem "";
+              color: #FF9500;
+            }
+            .num {
               float: right;
+              span {
+                color: #999999;
+                border:1px solid #999;
+                padding:0 .06rem;
+              }
+              .te {
+                border-left: 0;
+                border-right: 0;
+                padding:0 .1rem;
+              }
             }
           }
         }
-        // li {
-        //   @include rect(100%,1.42rem);
-        //   @include padding(.2rem 0);
-        //   input {
-        //     float: left;
-        //     @include rect(.2rem,.2rem);
-        //     border-radius: 50%;
-        //     @include margin(.4rem .1rem)
-        //   }
-        //   .img {
-        //     float: left;
-        //     @include rect(1rem,1rem);
-        //     @include background-color(#EEEEEE);
-        //     border-radius: .08rem;
-        //     overflow: hidden;
-        //     img {
-        //       @include rect(100%,100%);
-        //     }
-        //   }
-        //   dl {
-        //     float: left;
-        //     margin-left: .1rem;
-        //     dt {
-        //       font: .14rem/.3rem "";
-        //       color: #888888;
-        //     }
-        //     dd {
-        //       font: .12rem/.23rem "";
-        //       color: #D2D2D2;
-        //       span {
-        //         float: right;
-        //       }
-        //     }
-        //   }
-        // }
-        
       }
     }
     .center {
       @include rect(100%, auto);
+      @include background-color(#fff);
+      margin-top:.1rem;
       h3 {
-        font:.12rem/.2rem "";
-        color: #666;
+        font:.15rem/.36rem "";
+        color: #333;
         text-align: center;
       }
       ul {
@@ -448,24 +431,24 @@
         @include justify-content(space-around);
         @include flex-wrap(wrap);
         li {
-          @include rect(1.16rem,1.4rem);
-          text-align: center;
+          @include rect(1.5rem,2.1rem);
+          // text-align: center;
           .img {
-            @include rect(.86rem, .86rem);
+            @include rect(1.5rem, 1.5rem);
             @include border-radius(.08rem);
             overflow: hidden;
             @include margin(0 auto);
             img {
-              @include rect(.86rem, .86rem);
+              @include rect(1.5rem, 1.5rem);
             }
           }
           p {
-            font:.12rem/.16rem "";
+            font:.12rem/2 "";
             color: #666;
           }
           span {
-            font:.1rem/.14rem "";
-            color: #999;
+            font:.12rem/.14rem "";
+            color: #FF9500;
           }
         }
       }
@@ -473,12 +456,50 @@
     .footer {
       position: fixed;
       bottom: 0;
+      @include rect(100%,.44rem);
       .box {
-        @include rect(100%,.5rem);
         @include background-color(#eee);
-        input {
-          @include rect(.2rem, .2rem);
-          float: left;
+        i {
+          font-size: .18rem;
+          @include text-color(#ccc);
+          margin: .1rem;
+          span {
+            font-size: .16rem;
+            @include text-color(#333);
+            margin-left: .1rem;
+          }
+        }
+        .add {
+          @include rect(60%,.44rem);
+          position: fixed;
+          right:0;
+          bottom: 0;
+          .add-l {
+            float: left;
+            text-align: center;
+            p {
+              font: .1rem/.44rem "";
+              color: #999;
+              position: fixed;
+              right: .95rem;
+              span {
+                font: .16rem/.44rem "";
+                color: #F00202;
+              }
+            }
+          }
+          .add-r {
+            float: left;
+            @include rect(.85rem,.44rem);
+            @include background-color(#FF9500);
+            text-align: center;
+            margin-left: .1rem;
+            position: fixed;
+            right: 0;
+            p {
+              font:.12rem/.44rem "";
+            }
+          }
         }
       }
     }
