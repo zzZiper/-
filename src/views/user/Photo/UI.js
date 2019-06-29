@@ -20,26 +20,46 @@ class Com extends Component {
             <ul>
               <li>
                 <div className = "box">
-                  <h3>宝宝成长相册</h3>
-                  <p>￥199.9<span className = "iconfont icon02"></span></p>
+                  <div className = "img">
+                    <img src={require('@/images/照片.png')} alt=""/>
+                  </div>
+                  <div className="cont">
+                    <h3>宝宝成长相册</h3>
+                    <p>￥199.9<span className = "iconfont icon02"></span></p>
+                  </div>
                 </div>
               </li>
               <li>
                 <div className = "box">
-                  <h3>宝宝成长相册</h3>
-                  <p>￥199.9<span className = "iconfont icon02"></span></p>
+                  <div className = "img">
+                    <img src={require('@/images/照片.png')} alt=""/>
+                  </div>
+                  <div className="cont">
+                    <h3>宝宝成长相册</h3>
+                    <p>￥199.9<span className = "iconfont icon02"></span></p>
+                  </div>
                 </div>
               </li>
               <li>
                 <div className = "box">
-                  <h3>宝宝成长相册</h3>
-                  <p>￥199.9<span className = "iconfont icon02"></span></p>
+                  <div className = "img">
+                    <img src={require('@/images/照片.png')} alt=""/>
+                  </div>
+                  <div className="cont">
+                    <h3>宝宝成长相册</h3>
+                    <p>￥199.9<span className = "iconfont icon02"></span></p>
+                  </div>
                 </div>
               </li>
               <li>
                 <div className = "box">
-                  <h3>宝宝成长相册</h3>
-                  <p>￥199.9<span className = "iconfont icon02"></span></p>
+                  <div className = "img">
+                    <img src={require('@/images/照片.png')} alt=""/>
+                  </div>
+                  <div className="cont">
+                    <h3>宝宝成长相册</h3>
+                    <p>￥199.9<span className = "iconfont icon02"></span></p>
+                  </div>
                 </div>
               </li>
             </ul>

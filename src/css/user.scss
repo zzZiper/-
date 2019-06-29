@@ -266,10 +266,10 @@
   overflow: auto;
   .top {
     .am-navbar.am-navbar-dark {
-      @include rect(100%, .42rem);
+      @include rect(100%, .44rem);
       @include background-color(#fff);
       .am-navbar-title {
-        font:.18rem/42rem "";
+        font:.16rem/44rem "";
         color: #333 ;
       }
       .am-icon.am-icon-left.am-icon-md {
@@ -281,7 +281,6 @@
     margin-top:-.4rem;
   }
   .show {
-    @include background-color(#fff);
     .list {
       @include padding(.1rem .2rem);
       ul {
@@ -290,25 +289,27 @@
         @include justify-content(space-between);
         li {
           overflow: hidden;
-          @include rect(1.66rem, 2rem);
+          @include rect(1.6rem, 1.6rem);
           @include border-radius(.08rem);
-          @include background-color(#F7F7F7);
           @include margin(.08rem 0);
           .box {
-            @include padding(0 .1rem);
-            h3 {
-              font:.14rem/.2rem "";
-              color: #666;
+            .img {
+              @include rect(1.6rem,1.2rem);
             }
-            p {
-              font:.14rem/.2rem "";
-              color: #101010;
-              position: relative;
-              top:1.5rem;
-              span {
-                font:.18rem/.18rem "";
-                color: #101010;
-                float: right;
+            .cont {
+              padding:0 .1rem;
+              color: #333;
+              @include background-color(#fff);
+              h3 {
+                font:.1rem/.2rem "";
+              }
+              p {
+                font:.08rem/.2rem "";
+                span {
+                  font:.12rem/.12rem "";
+                  color: red;
+                  float: right;
+                }
               }
             }
           }
@@ -551,39 +552,117 @@
 .deceiving {
   overflow: auto;
   .top {
-    @include rect(100%,2.3rem);
+    @include rect(100%,2rem);
     span {
       display: block;
       @include rect(.3rem,.3rem);
-      @include background-color(#C6C5C5);
+      @include background-color(rgb(223, 222, 222));
       @include border-radius(50%);
       text-align: center;
       font-size: .2rem;
       font-family: "宋体";
       color: #101010;
-      margin-left: .1rem;
+      position: relative;
+      top:.1rem;
+      left:.1rem;
     }
   }
   .center {
-    @include rect(90%,1.74rem);
+    @include rect(90%,1.4rem);
     @include background-color(#fff);
     @include margin(-.87rem 0 0 5%);
-    position: absolute;
+    text-align: center;
+    position: relative;
     .time {
-      @include rect(1rem,1rem);
+      @include rect(.75rem,.75rem);
       border-radius:50%;
       border:1px solid #FF9800;
       @include background-color(#fff);
-      margin:-.5rem auto;
+      margin:0 auto;
       text-align: center;
+      position: relative;
+      top:-.38rem;
       p {
-        font: .12rem/.18rem "";
+        font: .1rem/1 "";
+        margin-top:.28rem;
+        color: #333;
+      }
+    }
+    .time1 {
+      margin-top:-.3rem;
+      font: .1rem/.24rem "";
+      color: #333;
+    }
+    .time2 {
+      font: .1rem/.18rem "";
+      color: #333;
+    }
+    .time3 {
+      @include flexbox();
+      @include justify-content(space-around);
+      margin-top: .1rem;
+      span {
+        display: block;
+        @include rect(.75rem,auto);
+        border-radius: .16rem;
+        float: left;
+        border: .01rem solid #999;
+        font:.12rem/.25rem "";
+      }
+    }
+  }
+  .show {
+    @include rect(90%,2.87rem);
+    @include background-color(#fff);
+    @include margin(.2rem 0 0 5%);
+    @include padding(.1rem .2rem);
+    h3 {
+      font:.14rem/2 "";
+    }
+    .about {
+      overflow: hidden;
+      .img {
+        @include flexbox();
+        @include justify-content(space-between);
+        img {
+          @include rect(1.3rem,1.3rem);
+        }
+      }
+      p {
+        font:.12rem/2 "";
+        color: #999;
+        span {
+          float: right;
+        }
+      }
+      b {
+        float: right;
+        font:.14rem/2 "";
+        color: #333;
+      }
+    }
+  }
+  .msg {
+    @include rect(90%,auto);
+    @include background-color(#fff);
+    @include margin(.2rem 0 0 5%);
+    @include padding(.1rem .2rem);
+    h4 {
+      font:.14rem/2 "";
+      color: #333;
+    }
+    p {
+      font:.12rem/2 "";
+      color: #333;
+      span {
+        float: right;
+        color: #999;
       }
     }
   }
 }
 
-// 待收货
+// 确认订单
 .confirm {
   .top {
     .am-navbar.am-navbar-dark {
@@ -706,6 +785,102 @@
       // .am-list-body {
       //   font:.14rem/.34rem "";
       // }
+    }
+  }
+  .foot {
+    position: fixed;
+    bottom: 0;
+    @include rect(100%,.44rem);
+    @include background-color(#fff);
+    .box {
+      @include background-color(#eee);
+      .add {
+        @include rect(60%,.44rem);
+        position: fixed;
+        right:0;
+        bottom: 0;
+        .add-l {
+          float: left;
+          text-align: center;
+          p {
+            font: .1rem/.44rem "";
+            color: #999;
+            position: fixed;
+            right: .95rem;
+            span {
+              font: .16rem/.44rem "";
+              color: #F00202;
+            }
+          }
+        }
+        .add-r {
+          float: left;
+          @include rect(.85rem,.44rem);
+          @include background-color(#FF9500);
+          text-align: center;
+          margin-left: .1rem;
+          position: fixed;
+          right: 0;
+          p {
+            font:.12rem/.44rem "";
+            color: #101010;
+          }
+        }
+      }
+    }
+  }
+}
+
+// 优惠券
+.coupon {
+  overflow: auto;
+  .top {
+    .am-navbar.am-navbar-dark {
+      @include rect(100%, .44rem);
+      @include background-color(#F9F9F9);
+      .am-navbar-title {
+        font:.18rem/44rem "";
+        color: #333 ;
+      }
+      .am-icon.am-icon-left.am-icon-md {
+        color: #333 ;
+      }
+    }
+  }
+  .list {
+    .box {
+      @include rect(3.33rem,.86rem);
+      @include background-color(#fff);
+      margin:.1rem 0 0 5%;
+      overflow: hidden;
+      float: left;
+      padding-left: .2rem;
+      p {
+        font:.14rem/.54rem "";
+      }
+      b {
+        font-size:.12rem;
+      }
+      .rig {
+        // float: left;
+        @include rect(1.12rem,.86rem);
+        @include background-color(#F16D69);
+        border-radius: .1rem;
+        position: relative;
+        top:-.7rem;
+        right:-2.01rem;
+        padding:.15rem 0 .15rem .2rem;
+        .p1 {
+          text-align: left;
+          font:.14rem/.24rem "";
+          span {
+            font:.18rem/1 "";
+          }
+        }
+        span {
+          font:.12rem/.42rem "";
+        }
+      }
     }
   }
 }

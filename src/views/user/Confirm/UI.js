@@ -1,10 +1,28 @@
 import React, { Component } from 'react';
 import { NavBar, Icon } from 'antd-mobile';
 import { List, Radio } from 'antd-mobile';
+import { ActionSheet } from 'antd-mobile';
 
 const RadioItem = Radio.RadioItem;
 
+const isIPhone = new RegExp('\\biPhone\\b|\\biPod\\b', 'i').test(window.navigator.userAgent);
+let wrapProps;
+if (isIPhone) {
+  wrapProps = {
+    onTouchStart: e => e.preventDefault(),
+  };
+}
+
 class Com extends Component {
+  constructor() {
+    super();
+    this.state = {
+      clicked: 'none',
+      clicked1: 'none',
+      clicked2: 'none',
+    };
+  }
+
   state = {
     value: 0
   };
@@ -17,6 +35,23 @@ class Com extends Component {
 
   componentDidMount () {
 
+  }
+
+  showActionSheet = () => {
+    const BUTTONS = [ 'Cancel'];
+    ActionSheet.showActionSheetWithOptions({
+      options: BUTTONS,
+      cancelButtonIndex: BUTTONS.length - 1,
+      destructiveButtonIndex: BUTTONS.length - 2,
+      // title: 'title',
+      message: 'I am description, description, description',
+      maskClosable: true,
+      'data-seed': 'logId',
+      wrapProps,
+    },
+    (buttonIndex) => {
+      this.setState({ clicked: BUTTONS[buttonIndex] });
+    });
   }
 
   render () {
@@ -76,6 +111,18 @@ class Com extends Component {
             </List>
           </div>
         </div>
+        <footer className = "foot">
+            <div className="box">
+              <div className = "add">
+                <div className="add-l">
+                  <p>实付款<span>￥199.00</span></p>
+                </div>
+                <div className="add-r" to="/users/confirm">
+                  <p onClick={this.showActionSheet}>提交订单</p>
+                </div>
+              </div>
+            </div>
+        </footer>
       </div>
     )
   }
