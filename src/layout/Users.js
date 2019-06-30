@@ -8,6 +8,7 @@ import Order from '@/views/user/Order';
 import Photo from '@/views/user/Photo';
 import Confirm from '@/views/user/Confirm';
 import Receiving from '@/views/user/Receiving';
+import Detail from '@/views/user/Detail';
 
 const Com = () => (
   <div className = "container">
@@ -20,6 +21,7 @@ const Com = () => (
       <Route path = "/users/photo" component = { Photo } />
       <Route path = "/users/receiving" component = { Receiving } />
       <Route path = "/users/confirm" component = { Confirm } />
+      <Route path = "/users/detail" component = { Detail } />
     </Switch>
   </div>
 )

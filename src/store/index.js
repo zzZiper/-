@@ -6,6 +6,7 @@ import cookbook from '@/views/silkbag/store';
 import order from '@/views/user/Order/store';
 import receiving from '@/views/user/Receiving/store';
 import confirm from '@/views/user/Confirm/store';
+import detail from '@/views/user/Detail/store';
 
 const reducer = combineReducers({
   SilkBag,
@@ -14,7 +15,8 @@ const reducer = combineReducers({
   cookbook,
   order,
   receiving,
-  confirm
+  confirm,
+  detail
 });
 
 const store = createStore(reducer);

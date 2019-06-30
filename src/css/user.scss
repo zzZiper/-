@@ -164,7 +164,7 @@
         @include flexbox();
         @include flex-wrap(wrap);
         @include justify-content(space-between); 
-        li {
+        a {
           @include rect(1.5rem, auto);
           @include flexbox();
           @include flex-direction(column);
@@ -880,6 +880,40 @@
         span {
           font:.12rem/.42rem "";
         }
+      }
+    }
+  }
+}
+
+//  详情页
+.detail {
+  overflow: auto;
+  .top {
+    .am-navbar.am-navbar-dark {
+      @include rect(100%, .44rem);
+      @include background-color(#fff);
+      .am-navbar-title {
+        font:.18rem/44rem "";
+        color: #333 ;
+      }
+      .am-icon.am-icon-left.am-icon-md {
+        color: #333 ;
+      }
+    }
+  }
+  .show {
+    .ban {
+      @include rect(100%,3.2rem);
+      @include background-color(rgb(238, 238, 238));
+      padding:.3rem 0;
+      .slider-slide {
+        img {
+          @include rect(2.5rem,2.5rem);
+        }
+      }
+      .slider-decorator-0 {
+        position: absolute ;
+        bottom: -.4rem !important;
       }
     }
   }

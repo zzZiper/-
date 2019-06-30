@@ -33,6 +33,7 @@ class Com extends Component {
     });
   };
 
+
   componentDidMount () {
 
   }

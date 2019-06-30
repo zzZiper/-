@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { NavBar, Icon } from 'antd-mobile';
+import { NavLink } from 'react-router-dom';
 // import  MemberBanner from '@/components/common/MemberBanner';
 
 import '@/css/user.scss';
@@ -49,7 +50,7 @@ class Com extends Component {
             <ul>
               {
                 showlist.map((item,index) => (
-                <li key={index}>
+                <NavLink to="/users/detail" key={index}>
                   <div className = "img">
                     <img src = { item.list.src } alt = ""/>
                   </div>
@@ -58,7 +59,7 @@ class Com extends Component {
                     <p>{ item.list.smallTitle }</p>
                     <b>￥ { item.list.money }</b>
                   </div>
-                </li>
+                </NavLink>
                 ))
               }
             </ul>
