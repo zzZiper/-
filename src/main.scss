@@ -27,8 +27,8 @@ html, body, #root, .container {
     ul {
       @include rect(100%, 100%);
       @include flexbox();
-      img {
-        @include rect(.22rem,.22rem);
+      i {
+        @include rect(.26rem,.26rem);
       }
       a {
         @include flex();
@@ -39,11 +39,42 @@ html, body, #root, .container {
         @include align-items();
         @include text-color(#333);
         font: .1rem/.1rem "";
-        p {
-          @include margin(.08rem 0 0 0 );
-        }
         &.active {
           @include text-color(#FF9500);
+        }
+      }
+      p {
+        margin-top:.1rem;
+      }
+      .silkbag {
+        
+        background: url('./images/锦囊-1.png') no-repeat center;
+        &.active {
+          background: url('./images/锦囊.png') no-repeat center;
+        }
+      }
+      .life {
+        background: url('./images/生活-1.png') no-repeat center;
+        &.active {
+          background: url('./images/生活.png') no-repeat center;
+        }
+      }
+      .time {
+        background: url('./images/时光机-1.png') no-repeat center;
+        &.active {
+          background: url('./images/时光机.png') no-repeat center;
+        }
+      }
+      .msg {
+        background: url('./images/消息-1.png') no-repeat center;
+        &.active {
+          background: url('./images/消息.png') no-repeat center;
+        }
+      }
+      .user {
+        background: url('./images/我的-1.png') no-repeat center;
+        &.active {
+          background: url('./images/我的.png') no-repeat center;
         }
       }
     }

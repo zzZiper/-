@@ -18,24 +18,24 @@ const Com = () => (
     </Switch>
     <footer className = "footer">
       <ul>
-        <NavLink to = "/silkbag">
-          <img src={require("@/images/锦囊-1.png")} alt=""/>
+        <NavLink to = "/silkbag" className="silkbag">
+          <i></i>
           <p>锦囊</p>
         </NavLink>
-        <NavLink to = "/life">
-          <img src={require("@/images/生活-1.png")} alt=""/>
+        <NavLink to = "/life" className="life">
+          <i></i>
           <p>生活</p>
         </NavLink>
-        <NavLink to = "/time">
-          <img src={require("@/images/时光机-1.png")} alt=""/>
+        <NavLink to = "/time" className="time">
+          <i></i>
           <p>时光记</p>
         </NavLink>
-        <NavLink to = "/msg">
-          <img src={require("@/images/消息-1.png")} alt=""/>
+        <NavLink to = "/msg" className="msg">
+          <i></i>
           <p>消息</p>
         </NavLink>
-        <NavLink to = "/user">
-          <img src={require("@/images/我的-1.png")} alt=""/>
+        <NavLink to = "/user" className="user">
+          <i></i>
           <p>我的</p>
         </NavLink>
       </ul>

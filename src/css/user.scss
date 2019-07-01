@@ -888,6 +888,7 @@
 //  详情页
 .detail {
   overflow: auto;
+  @include background-color(rgb(240, 240, 240));
   .top {
     .am-navbar.am-navbar-dark {
       @include rect(100%, .44rem);
@@ -916,5 +917,93 @@
         bottom: -.4rem !important;
       }
     }
+  }
+  .about {
+    @include rect(100%,.92rem);
+    @include background-color(#fff);
+    padding:.17rem .15rem;
+    overflow: hidden;
+    .about-l {
+      float: left;
+      @include rect(2rem,.92rem);
+      h3 {
+        font-size: .14rem;
+        color:#333;
+      }
+      h4 {
+        font:.1rem/3 "";
+        color:#666;
+      }
+      p {
+        font-size: .1rem;
+        color:#FF9500;
+        span {
+          font-size: .12rem;
+          margin:0 .1rem;
+        }
+        strike {
+          color: #666;
+        }
+      }
+    }
+    .about-r {
+      float: left;
+      border-left: .01rem solid #666;
+      margin:.08rem 0 0 .6rem;
+      padding:.1rem 0 .1rem .2rem;
+      span {
+        @include rect(.36rem,auto);
+        display: block;
+        font:.12rem/.18rem "";
+      }
+    }
+  }
+  .Discount {
+    @include rect(100%,auto);
+    @include background-color(#fff);
+    padding:0 .16rem;
+    margin-top: .1rem;
+    p {
+      font:.1rem/4 "";
+      color:#333;
+      border-bottom: .01rem solid rgb(221, 221, 221);
+      span {
+        color: #FF9500;
+        margin:0 .1rem;
+      }
+      b {
+        float: right;
+      }
+    }
+    .te {
+      border:0;
+      span {
+        color: #999;
+      }
+    }
+  }
+  .evaluate {
+    @include rect(100%,1.4rem);
+    @include background-color(#fff);
+    margin-top: .1rem;
+    padding:0 .16rem;
+    h3 {
+      font:.1rem/.34rem "";
+      color: #333;
+      span {
+        font:.14rem/.34rem "";
+        color: #666;
+        float: right;
+      }
+    }
+    // ul {
+      .box {
+        // @include flex();
+        // @include flex-wrap(nowrap);
+        @include rect(2.6rem,.95rem);
+        @include background-color(#EFEFF4);
+        margin-right: .3rem;
+      }
+    // }
   }
 }
